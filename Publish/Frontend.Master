@@ -1,0 +1,669 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Frontend.master.cs" Inherits="Com.Gosol.CMS.Web.Frontend" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <link href="/Styles/flexslider.css" rel="stylesheet" />
+    <link href="/AdminLte/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/AdminLte/dist/css/AdminLTE.min.css" rel="stylesheet" />
+
+    <%-- <link href="/AdminLte/jquery.formvalidation/css/formValidation.min.css" rel="stylesheet" />--%>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+
+    <script type="text/javascript" src="/AdminLte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="/AdminLte/fonts/fontawesome-webfont.woff2"></a>
+    <title></title>
+    <script src="/Scripts/responsiveslides.min.js"></script>
+    <script type="text/javascript" src="/Scripts/easing.js"></script>
+    <script src="/Scripts/move-top.js" type="text/javascript"></script>
+    <!--/script-->
+    <link href="AdminLte/plugins/datepicker/datepicker3.css" rel="stylesheet" />
+    <link href="/Styles/dropdownlist/chosen.min.css" rel="stylesheet" type="text/css" />
+    <script src="/Scripts/dropdownlist/chosen.jquery.js" type="text/javascript"></script>
+    <%--<script type="text/javascript" src="/Scripts/jquery.ui.datepicker-vi.js"></script>--%>
+    <script type="text/javascript" src="/AdminLte/bootstrap/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="/AdminLte/bootstrap/js/bootstrap-datepicker.vi.js"></script>
+    <%--<script src="Scripts/jquery.ui.datepicker-vi.js"></script>--%>
+    <!-- Cookie -->
+    <script type="text/javascript" src="/Scripts/jquery.cookie.js"></script>
+    <!-- Validattion Engine -->
+    <%--<link rel="stylesheet" type="text/css" media="all" href="/Styles/validationEngine.jquery.css" />--%>
+    <%--<script type="text/javascript" src="/Scripts/jquery.validationEngine-vi.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/Scripts/jquery.validationEngine.js" charset="utf-8"></script>--%>
+    <%--<script src="/Scripts/ChiThietKetHoachTT.js" type="text/javascript"></script>--%>
+    <%--<script src="/Scripts/ChiTietCuocThanhTra.js" type="text/javascript"></script>--%>
+    <script type="text/javascript" src="/AdminLte/bootstrap/js/bootstrap.min.js"></script>
+    <%--<script src="/AdminLte/jquery.formvalidation/js/formValidation.min.js"></script>
+    <script src="/AdminLte/jquery.formvalidation/js/framework/bootstrap.min.js"></script>--%>
+    <script src="/AdminLte/plugins/select2/select2.min.js" type="text/javascript"></script>
+    <script src="/AdminLte/plugins/moment.min.js" type="text/javascript"></script>
+    <script src="/AdminLte/plugins/input-mask/jquery.inputmask.js" type="text/javascript"></script>
+
+    <link href="/Styles/Style_Frontend.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Frontend2019.css" rel="stylesheet" />
+
+    <style type="text/css">
+        .tables-noborder {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+            .tables-noborder tr td {
+                height: 50px;
+            }
+
+        .user {
+            float: right;
+            box-sizing: border-box;
+            font-size: 12px;
+            display: none;
+        }
+
+            .user img {
+                vertical-align: -2px;
+            }
+
+        .loadding_qrcode {
+            clear: both;
+            width: 100%;
+            height: 22px;
+            z-index: 9999;
+            background: url('/images/prettyLoader/loading.gif') 50% 50% no-repeat rgb(249,249,249);
+        }
+
+        .navbar-default {
+            text-transform: uppercase;
+            font-size: .8em;
+        }
+
+        #form1 {
+            min-height: 100%;
+            position: relative;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 160px; /* Height of the footer */
+            background: linear-gradient(to bottom, #ccffff -100%, #ffffff 77%);
+        }
+
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .main-body {
+            padding-bottom: 160px;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        jQuery(document).ready(function ($) {
+            renderItemMenu();
+
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
+            });
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+            $(".datepicker").datepicker({
+                format: 'dd/mm/yyyy',
+                isRTL: false,
+                autoclose: true,
+                language: 'vi',
+
+            });
+
+            //$(".datepicker").datepicker();
+            var config = {
+                '.chosen': {}
+            }
+            for (var selector in config) {
+                $(selector).chosen(config[selector]);
+
+            }
+            $(".chosen").trigger("chosen:updated");
+        });
+        $(document).ready(function () {
+            //$('.nav-list').on('click', 'li', function () {
+            //    $('.nav-list > li >.active').removeClass('active');
+            //    $(this).addClass('active');
+            //});
+
+            var url = window.location;
+            $('.navbar .nav').find('.active').removeClass('active');
+            $('.navbar .nav li a').each(function () {
+                if (this.href == url) {
+                    $(this).parent().addClass('active');
+                }
+            });
+
+            $('#LoginText').click(function () {
+                showLoginForm();
+            });
+            $('#RegisterText').click(function () {
+                $("#registerForm").modal();
+            });
+            $('#dangNhapFooter').click(function () {
+                showLoginForm();
+            });
+            $('#dangKyFooter').click(function () {
+                $("#registerForm").modal();
+            });
+            //checkValidation();
+            $('#txtTaiKhoan').change(function () {
+                $.ajax({
+                    type: "POST",
+                    url: "Home.aspx/CheckUserName",
+                    data: '{userName:"' + $('#txtTaiKhoan').val() + '"}',
+                    dataType: "json",
+                    async: "true",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        var json = eval('(' + data.d + ')');
+                        if (json != null) {
+                            console.log('json', json);
+                            if (json == 1) {
+                                $("#lbltaikhoan").html("Tài khoản này đã tồn tại");
+                                $("#lbltaikhoan").css('visibility', 'visible');
+                            } else {
+                                $("#lbltaikhoan").html("");
+                            }
+                        }
+                    }
+                });
+            });
+            isLogin();
+            var tenCanBo = '<%= Session["USER$DA31A175C7679319BFFEDF3EF282D1F4TENCANBO"] %>';
+            $("#lblUserName").html(tenCanBo);
+            $("#loginForm").on("hidden.bs.modal", function () {
+                $("#txtUserName").val("");
+                $("#txtPassword").val("");
+                $("#lblError").html("");
+            });
+        });
+
+        function isLogin() {
+            var session = '<%= Session["USER$DA31A175C7679319BFFEDF3EF282D1F4CUONGLB"] %>';
+            //console.log('session', session);
+            if (session.length > 0) {
+                $(".num").hide();
+                $(".user").show();
+            }
+        }
+        function showLoginForm() {
+            $("#loginForm").modal();
+        }
+        function clearRegisterForm() {
+            //console.log('clearRegisterForm');
+            $("#txtHoTen").val("");
+            $("#txtNgaySinh").val("");
+            $("#ddlGioiTinh").val("0");
+            $("#txtDiaChi").val("");
+            $("#txtEmail").val("");
+            $("#txtDienThoai").val("");
+            $("#txtTaiKhoan").val("");
+            $("#txtMatKhau").val("");
+            document.getElementById("RequiredFieldValidator9").style.visibility = "hidden";
+            document.getElementById("RegularExpressionValidator9").style.visibility = "hidden";
+            document.getElementById("RegularExpressionValidator3").style.visibility = "hidden";
+            document.getElementById("RequiredFieldValidator1").style.visibility = "hidden";
+            document.getElementById("lbltaikhoan").style.visibility = "hidden";
+            document.getElementById("RegularExpressionValidator1").style.visibility = "hidden";
+            document.getElementById("RequiredFieldValidator2").style.visibility = "hidden";
+            document.getElementById("RegularExpressionValidator2").style.visibility = "hidden";
+            document.getElementById("RegularExpressionValidator4").style.visibility = "hidden";
+            //document.getElementById("RegularExpressionValidator1").style.visibility = "hidden";
+        }
+        function resetLoginForm() {
+
+            $("#txtUserName").val("");
+            $("#txtPassword").val("");
+            $("#lblError").html("");
+        }
+        function showMessage(message) {
+            $("#messageContent").html(message);
+            $("#messageBox").modal();
+        }
+        function hideMessage() {
+            //$("#messageContent").html(message);
+            clearRegisterForm();
+            $("#messageBox").modal('hide');
+        }
+        function HideRegisterForm() {
+            clearRegisterForm();
+            $("#registerForm").modal('hide');
+        }
+        function showConfirmLoginForm() {
+
+            $("#confirmLoginForm").modal();
+        }
+        function hideConfirmLoginForm() {
+
+            $("#confirmLoginForm").modal('hide');
+        }
+
+        function renderItemMenu() {
+            
+            $.ajax({
+                url: "Home.aspx/GetDataSideBar",
+                type: "POST",
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                success: function (data) {
+                    var data = JSON.parse(data.d);
+                    var dataMenu = data.filter(item => item.Module == 1);
+                    //console.log('ajax', dataMenu);
+                    $("#ulMenu").html("");
+                    var home = $("#TrangChu").html();
+                    $("#ulMenu").append(home);
+                    for (let i = 0; i < dataMenu.length; i++) {
+                        if (dataMenu[i].TrangThaiHienThi) {
+                            var item = $("#" + dataMenu[i].MaModule).html();
+                            $("#ulMenu").append(item);
+                        }
+                    }
+                },
+                error: function (error) {
+                    $("#ulMenu").html("");
+                    var home = $("#TrangChu").html();
+                    $("#ulMenu").append(home);
+                }
+            });
+        }
+
+    </script>
+</head>
+<body style="background-color: white">
+    <form id="form1" method="post" runat="server" clientidmode="Static">
+        <div class="header">
+            <div class="header-bottom">
+                <div class="header-top" style="display: none;">
+                    <div class="wrap">
+                        <div class="top-menu">
+                            <ul>
+                                <li>Bà Rịa–Vũng Tàu  &nbsp&nbsp|&nbsp&nbsp
+                                    <asp:Label runat="server" ID="lblCurrentDate"></asp:Label>
+                                    &nbsp&nbsp|&nbsp&nbsp Hotline  02543 727 801 </li>
+                            </ul>
+
+                        </div>
+                        <div class="user" style="float: right; padding-right: 50px">
+                            <asp:Image ImageUrl="~/images/icon_key_kntc.png" runat="server" Style="margin-right: 7px;" />
+                            <span style="color: blue;">Xin chào, </span>
+                            <asp:Label ID="lblUserName" runat="server" Style="margin-left: 5px; font-weight: 500; color: blue;"></asp:Label>
+                            <%--<a href="#" onclick="ShowNotify(); return false;" id="show_notify">
+                            <asp:Image ImageUrl="~/images/notify-white.png" runat="server" Style="margin-left: 7px; width: 20px;" />
+                            <span class="notify" style=""></span>
+                        </a>--%>
+                            <span style="border-right: 1px solid #fff; margin-left: 10px;"></span>
+                            <asp:HyperLink runat="server" Style="color: blue; margin-left: 12px; font-weight: 500"
+                                NavigateUrl="~/MemberSignOut.aspx">Thoát</asp:HyperLink>
+                        </div>
+                        <div class="num">
+                            <%-- <p><a id="RegisterText" href="#">Đăng ký</a> | <a id="LoginText" href="#">Đăng nhập</a></p>--%>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="wrap header-bottom-height" style="height: 86px;">
+                    <div class="logo" style="display: none;">
+                        <div class="col-md-9">
+                            <a href="/Webapp/Frontend/TimKiemDonThu.aspx">
+                                <%--<img src="/images/frontend/logo_tt_vungtau.png" />--%>
+                                <div style="width: 90px; height: 100px; float: left; margin-top: 20px;">
+                                    <img src="/images/logo_thanhtra.png" style="width: 90px;" />
+                                </div>
+                                <div style="float: left; color: #000; margin-top: 10px">
+                                    <h1 style="font-size: 27px; font-weight: bold; color: #fcf8e3">THANH TRA TỈNH <span style="color: red">BÀ RỊA - VŨNG TÀU</span> </h1>
+                                    <h3 style="color: #fcf8e3; font-size: 18px">Cổng thông tin khiếu nại, tố cáo</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <div class="input-group " style="margin-top: 25px; display: none">
+                                <asp:TextBox ID="txtSearch" runat="server" placeholder="Tìm kiếm" CssClass="form-control"></asp:TextBox>
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="navigation">
+                    <nav class="navbar navbar-default " role="navigation" style="background-color: #337ab7; border: none; background-image: url('../../images/frontend/banner/menu_bg2.png');">
+                        <%--<div class="header-default">
+                        </div>--%>
+                        <div class="wrap">
+                            <!--/.navbar-header-->
+                            <div class="collapse dasdasd navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav nav-list" id="ulMenu">
+                                    <%--<li><a style="font-weight: 300;" href="/Webapp/Frontend/Home.aspx">Trang chủ</a></li>
+                                    <li><a href="/Webapp/Frontend/GioiThieu.aspx">Giới thiệu</a></li>
+                                    <li class="liTinTuc"><a style="font-weight: 300;" href="/tin-tuc">Tin tức</a></li>
+                                    <li class="liTraCuu"><a style="font-weight: 300;" href="/Webapp/Frontend/TraCuu.aspx">Tra cứu đơn thư</a></li>
+                                    <li><a style="font-weight: 300;" href="/Webapp/Frontend/LichTiepDan.aspx">Lịch tiếp dân</a></li>
+                                    <li><a style="font-weight: 300;" href="/Webapp/Frontend/TrinhTuThuTuc.aspx">Trình tự thủ tục</a></li>
+                                    <li><a style="font-weight: 300;" href="http://thanhtra.baria-vungtau.gov.vn/web/guest/hoi-dap-truc-tuyen" target="_blank">Hỏi đáp</a></li>--%>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <!--/.navbar-collapse-->
+                        <!--/.navbar-->
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <%-- Template menu --%>
+        <div id="TrangChu" style="display: none">
+            <li><a style="font-weight: 300;" href="/Webapp/Frontend/Home.aspx">Trang chủ</a></li>
+        </div>
+        <div id="Menu_TinTuc" style="display: none">
+            <li class="liTinTuc"><a style="font-weight: 300;" href="/Webapp/Frontend/TinTuc.aspx">Tin tức</a></li>
+        </div>
+        <div id="Menu_TraCuuDonThu" style="display: none">
+            <li class="liTraCuu"><a style="font-weight: 300;" href="/Webapp/Frontend/TraCuu.aspx">Tra cứu đơn thư</a></li>
+        </div>
+        <div id="Menu_LichTiepDan" style="display: none">
+            <li><a style="font-weight: 300;" href="/Webapp/Frontend/LichTiepDan.aspx">Lịch tiếp dân</a></li>
+        </div>
+        <div id="Menu_TrinhTuThuTuc" style="display: none">
+            <li><a style="font-weight: 300;" href="/Webapp/Frontend/TrinhTuThuTuc.aspx">Trình tự thủ tục</a></li>
+        </div>
+        <div id="Menu_HoiDap" style="display: none">
+            <li><a style="font-weight: 300;" href="http://thanhtra.baria-vungtau.gov.vn/web/guest/hoi-dap-truc-tuyen" target="_blank">Hỏi đáp</a></li>
+        </div>
+        
+
+        <div class="main-body">
+            <div class="wrap wrapper-content" style="padding: 10px">
+
+                <div class="clearfix">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer" style="background: url('/images/menu-bg.png') no-repeat center; background-size: 100% 100%">
+            <div class="footer-top">
+                <div class="wrap">
+                    <%--<div class="col-md-2 col-xs-6 col-sm-4 footer-grid" style="text-align: center">
+                        <a href="index.html">
+                            <img src="/images/logo_thanhtra.png" class="logo-footer" />
+                        </a>
+                    </div>--%>
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 footer-grid">
+                        <div class="footer-head" style="color: white">
+                            <h4 class="footer-head" style="font-family: 'Tahoma', sans-serif; color: white">CỔNG THÔNG TIN CÔNG BỐ KẾT QUẢ GIẢI QUYẾT KHIẾU NẠI TỐ CÁO</h4>
+                            <span style="/*color: #979797*/">Đơn vị quản lý: Thanh tra tỉnh Bà Rịa - Vũng Tàu </span>
+                            <br />
+                            <span style="/*color: #979797*/">Địa chỉ: Số 11 Trường Chinh, Phường Phước Trung, TP Bà Rịa, tỉnh Bà Rịa – Vũng Tàu.</span><br />
+                            <span style="/*color: #979797*/">Điện thoại: 02543 727 801 - Fax: 02543 727 802</span>
+                            <br />
+                            <span style="/*color: #979797*/">Email: thanhtra@baria-vungtau.gov.vn </span>
+                            <br />
+                            <span style="/*color: #979797*/">Ghi rõ nguồn <a target="_blank" href="http://kqkntc.baria-vungtau.gov.vn" style="color: white">http://kqkntc.baria-vungtau.gov.vn</a>  khi sử dụng thông tin trên trang thông tin này.</span>
+                        </div>
+                    </div>
+                    <%--<div class="col-md-3 col-xs-12 col-sm-12 footer-grid">
+                        <h4 class="footer-head">VỀ CHÚNG TÔI</h4>
+                        <ul class="cat">
+                         
+                            <li><a href="/tin-tuc">Tin tức</a></li>
+                            <li><a href="/Webapp/Frontend/TraCuu.aspx">Tra cứu đơn thư</a></li>
+                            <li><a href="/Webapp/Frontend/HoiDap.aspx">Hỏi đáp</a></li>
+                            <li><a href="/Webapp/Frontend/LichTiepDan.aspx">Lịch tiếp dân</a></li>
+                            <li><a href="/Webapp/Frontend/TrinhTuThuTuc.aspx">Trình tự thủ tục</a></li>
+                        </ul>
+                    </div>--%>
+                    <%--<div class="col-md-3 col-xs-12 col-sm-12 footer-grid">
+                        <h4 class="footer-head">TÀI KHOẢN</h4>
+                        <ul class="cat">
+                            <li><a id="dangKyFooter" href="#">Đăng ký</a></li>
+                            <li><a id="dangNhapFooter" href="#">Đăng nhập</a></li>
+                            <li><a href="#">Quên mật khẩu</a></li>
+                        </ul>
+                    </div>--%>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <%--          <div class="footer-bottom">
+                <div class="wrap">
+                    <div class="copyrights col-md-12" style="text-align: center">
+                        <p>Phát triển bởi  <a href="http://gosol.com.vn/" style="color: #cfcfcf;">GO SOLUTION</a></p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>--%>
+        </div>
+
+        <!-- Modal Login -->
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" id="loginForm" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="resetLoginForm();">
+                            <span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Đăng nhập hệ thống</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-lg-3 col-sm-3 control-label"><b>Tài khoản</b></label>
+                                <div class="col-lg-9">
+                                    <asp:TextBox ID="txtUserName" runat="server" Enabled="true" CssClass="form-control"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-3 col-sm-3 control-label"><b>Mật khẩu</b></label>
+
+                                <div class="col-lg-9">
+                                    <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-3"></div>
+                                <div class="col-lg-9">
+                                    <p id="error_div" runat="server" style="display: none; margin-top: 5px; color: red">
+                                        <%--<img src="images/icon_note.png" alt="" width="16" height="16" />--%>
+                                        <asp:Label ID="lblError" Text="" runat="server" CssClass="lblError" />
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer" style="text-align: center">
+                        <%--<a class="forget_pas_login" href="QuenMatKhau.aspx">Quên mật khẩu ?</a>--%>
+                        <asp:Button ID="btnLogin" runat="server" CssClass="btn btn-primary btn-lg" Text="Đăng nhập" OnClick="btnLogin_Click" />
+
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- Modal Register -->
+
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="registerForm" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Đăng ký tài khoản</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table style="" class="tables-noborder">
+                            <tr>
+                                <th class="field_label lblText right-align" style="width: 25%">
+                                    <span style="color: red;">*</span> Họ tên:
+                                <asp:HiddenField ID="hdCanBoID" runat="server" />
+                                </th>
+                                <td colspan="2" style="width: 75%">
+                                    <asp:TextBox ID="txtHoTen" class="form-control" runat="server"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ErrorMessage="Vui lòng nhập họ tên!" ControlToValidate="txtHoTen" ForeColor="Red" SetFocusOnError="true"
+                                        Display="Dynamic" ValidationGroup="vldDangKy"></asp:RequiredFieldValidator>
+                                    <asp:RegularExpressionValidator ID="RegularExpressionValidator4" ControlToValidate="txtHoTen" runat="server"
+                                        ErrorMessage="Độ dài 3-30 ký tự, không chứa ký tự đặc biệt!" ValidationExpression="[a-zA-Z0-9_ '-'\sáàảãạăâắằấầặẵẫậéèẻẽẹêếềểễệóòỏõọôốồổỗộơớờởỡợíìỉĩịđùúủũụưứửữựÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỂỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤƯỨỪỬỮỰỲỴÝỶỸỳỵỷỹý]{3,30}$" ForeColor="Red" SetFocusOnError="true" ValidationGroup="vldDangKy"></asp:RegularExpressionValidator>
+                                </td>
+                            </tr>
+                            <!-- ngaySinh -->
+                            <tr>
+                                <th class="field_label lblText right-align">Ngày sinh:
+                                </th>
+                                <td colspan="2">
+                                    <asp:TextBox ID="txtNgaySinh" runat="server" class=" form-control datepicker"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <!-- gioiTinh -->
+                            <tr>
+                                <th class="field_label lblText right-align">Giới tính:
+                                </th>
+                                <td colspan="2">
+                                    <asp:DropDownList ID="ddlGioiTinh" runat="server" CssClass="form-control">
+                                        <asp:ListItem Text="Chọn giới tính" Value="0"></asp:ListItem>
+                                        <asp:ListItem Text="Nam" Value="1"></asp:ListItem>
+                                        <asp:ListItem Text="Nữ" Value="2"></asp:ListItem>
+                                    </asp:DropDownList>
+                                </td>
+                            </tr>
+                            <!-- diaChi -->
+                            <tr>
+                                <th class="field_label lblText right-align">Địa chỉ:
+                                </th>
+                                <td colspan="2">
+                                    <div id="wwctrl_diaChi_frm" class="wwctrl">
+                                        <asp:TextBox ID="txtDiaChi" runat="server" CssClass="form-control"></asp:TextBox>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th class="field_label lblText right-align">Email:
+                                </th>
+                                <td colspan="2">
+                                    <asp:TextBox ID="txtEmail" runat="server" CssClass="validate[custom[email]] form-control"></asp:TextBox>
+                                    <asp:RegularExpressionValidator ID="RegularExpressionValidator9" ControlToValidate="txtEmail" runat="server" ValidationGroup="vldDangKy"
+                                        ErrorMessage="Email không hợp lệ!" ValidationExpression="^(([^<>()\[\]\\.,;:\s@']+(\.[^<>()\[\]\\.,;:\s@']+)*)|('.+'))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$" ForeColor="Red" SetFocusOnError="true">
+                                    </asp:RegularExpressionValidator>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="field_label lblText right-align">Điện thoại:
+                                </th>
+                                <td colspan="2">
+                                    <asp:TextBox ID="txtDienThoai" runat="server" CssClass="validate[custom[phone]] form-control"></asp:TextBox>
+                                    <asp:RegularExpressionValidator ID="RegularExpressionValidator3" ControlToValidate="txtDienThoai" runat="server"
+                                        ErrorMessage="Số điện thoại không hợp lệ!" ValidationExpression="^0(1\d{9}|9\d{8})$" ForeColor="Red" SetFocusOnError="true" ValidationGroup="vldDangKy">
+                                    </asp:RegularExpressionValidator>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="field_label lblText right-align"><span style="color: red;">*</span>Tên tài khoản:
+                                </th>
+                                <td colspan="2">
+                                    <asp:TextBox ID="txtTaiKhoan" runat="server" CssClass="form-control"></asp:TextBox>
+                                    <label style="color: red; text-align: center" id="lbltaikhoan"></label>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Vui lòng nhập tài khoản!" ControlToValidate="txtTaiKhoan" ForeColor="Red" SetFocusOnError="true"
+                                        Display="Dynamic" ValidationGroup="vldDangKy"></asp:RequiredFieldValidator>
+                                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" ControlToValidate="txtTaiKhoan" runat="server"
+                                        ErrorMessage="Độ dài 3-30 ký tự, không chứa ký tự đặc biệt!" ValidationExpression="[a-zA-Z0-9_]{3,30}$" ForeColor="Red" SetFocusOnError="true" ValidationGroup="vldDangKy"></asp:RegularExpressionValidator>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="field_label lblText right-align"><span style="color: red;">*</span>Mật khẩu:
+                                </th>
+                                <td colspan="2">
+                                    <asp:TextBox ID="txtMatKhau" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Vui lòng nhập mật khẩu!" ControlToValidate="txtMatKhau" ForeColor="Red" SetFocusOnError="true"
+                                        Display="Dynamic" ValidationGroup="vldDangKy"></asp:RequiredFieldValidator>
+                                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" ControlToValidate="txtMatKhau" runat="server" ValidationGroup="vldDangKy"
+                                        ErrorMessage="Độ dài 6-30 ký tự!" ValidationExpression="[a-zA-Z0-9$@$!%*#?&_]{6,30}$" ForeColor="Red" SetFocusOnError="true"></asp:RegularExpressionValidator>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">&nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <asp:Button ID="btnDangKy" runat="server" CssClass="save btn btn-primary validate_button" Text="Đăng ký" OnClick="btnDangKy_Click" ValidationGroup="vldDangKy" />
+                        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="HideRegisterForm();">Hủy</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="messageBox" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Thông báo</h4>
+                    </div>
+                    <div class="modal-body">
+                        <span id="messageContent"></span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="hideMessage();">Đóng</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="confirmLoginForm" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Thông báo</h4>
+                    </div>
+                    <div class="modal-body">
+                        <asp:HiddenField ID="hdfUser" runat="server" />
+                        <asp:HiddenField ID="hdfPass" runat="server" />
+                        <span>Đăng ký thành công!</span>
+                        <br />
+                        <span>Bạn có muốn đăng nhập hệ thống không?</span>
+                    </div>
+                    <div class="modal-footer">
+                        <asp:Button runat="server" CssClass="btn btn-default" Text="Đăng nhập ngay" OnClick="btnLoginNow_Click" ID="btnLoginNow" />
+                        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="hideConfirmLoginForm();">Để sau</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+    </form>
+    <a href="#to-top" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+
+</body>
+</html>

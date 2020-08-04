@@ -1,0 +1,51 @@
+﻿Uninstalling assembly 'E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.InstallLog
+   assemblypath = E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.exe
+Removing EventLog source SyncDonThuService.
+An exception occurred during the uninstallation of the System.Diagnostics.EventLogInstaller installer.
+System.Security.SecurityException: Requested registry access is not allowed.
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Installing assembly 'E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.InstallLog
+   assemblypath = E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.exe
+Installing service SyncDonThuService...
+Creating EventLog source SyncDonThuService in log Application...
+Rolling back assembly 'E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.InstallLog
+   assemblypath = E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.exe
+Restoring event log to previous state for source SyncDonThuService.
+Uninstalling assembly 'E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.InstallLog
+   assemblypath = E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.exe
+Removing EventLog source SyncDonThuService.
+Service SyncDonThuService is being removed from the system...
+Service SyncDonThuService was successfully removed from the system.
+Installing assembly 'E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.InstallLog
+   assemblypath = E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.exe
+Installing service SyncDonThuService...
+Service SyncDonThuService has been successfully installed.
+Creating EventLog source SyncDonThuService in log Application...
+Committing assembly 'E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.InstallLog
+   assemblypath = E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.exe
+Uninstalling assembly 'E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.InstallLog
+   assemblypath = E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.exe
+Removing EventLog source SyncDonThuService.
+Service SyncDonThuService is being removed from the system...
+Service SyncDonThuService was successfully removed from the system.

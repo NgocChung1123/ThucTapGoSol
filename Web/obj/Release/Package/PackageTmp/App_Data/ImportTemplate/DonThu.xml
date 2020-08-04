@@ -1,0 +1,119 @@
+<Data>
+  <TenDonVi></TenDonVi>
+  <MaDonVi></MaDonVi>
+
+  <TiepDan>
+    <SoThuTu></SoThuTu>
+    <MaDonThu></MaDonThu>
+    <NgayTiep></NgayTiep>
+    <SoLan></SoLan>
+    <LanhDaoTiep></LanhDaoTiep>
+    <LoaiDoiTuongKN>1</LoaiDoiTuongKN>
+    <SoNguoi>1</SoNguoi>
+    <DoiTuongKN>            
+    </DoiTuongKN>
+    <DoiTuongBiKN>
+      <HoTen></HoTen>
+      <ChucVu></ChucVu>
+      <NoiCongTac></NoiCongTac>
+    </DoiTuongBiKN>
+    <NoiDungTiep>Test IMPORT dữ liệu</NoiDungTiep>
+    <MaLoaiKhieuTo1></MaLoaiKhieuTo1>
+    <MaLoaiKhieuTo2></MaLoaiKhieuTo2>
+    <MaLoaiKhieuTo3></MaLoaiKhieuTo3>
+    <MaLoaiKhieuTo4></MaLoaiKhieuTo4>
+    <KetQuaTiep></KetQuaTiep>
+  </TiepDan>
+
+  <XuLyDon>
+    <MaXuLyDon></MaXuLyDon>
+    <MaDonThu></MaDonThu>
+    <SoLan>1</SoLan>
+    <SoDonThu>1</SoDonThu>
+    <NgayNhapDon></NgayNhapDon>
+    <NgayQuaHan></NgayQuaHan>
+    <NguonDonDen>1</NguonDonDen>
+    <LoaiDoiTuongKN>1</LoaiDoiTuongKN>
+    <SoNguoi>1</SoNguoi>
+    <TenChuDon></TenChuDon>
+    <CMNDChuDon></CMNDChuDon>
+    <DoiTuongKN>
+    </DoiTuongKN>
+    <FileHoSo></FileHoSo>
+    <NoiDungDon></NoiDungDon>
+    <LoaiKhieuTo1Id></LoaiKhieuTo1Id>
+    <LoaiKhieuTo2Id></LoaiKhieuTo2Id>
+    <LoaiKhieuTo3Id></LoaiKhieuTo3Id>
+    <LoaiKhieuTo4Id></LoaiKhieuTo4Id>
+    <MaLoaiKhieuTo1></MaLoaiKhieuTo1>
+    <MaLoaiKhieuTo2></MaLoaiKhieuTo2>
+    <MaLoaiKhieuTo3></MaLoaiKhieuTo3>
+    <MaLoaiKhieuTo4></MaLoaiKhieuTo4>
+    <DoiTuongBiKN>
+      <HoTen></HoTen>
+      <ChucVu></ChucVu>
+      <NoiCongTac></NoiCongTac>
+    </DoiTuongBiKN>
+    <HuongXuLy></HuongXuLy>
+    <NoiDungHuongDan></NoiDungHuongDan>
+    <CQChuyenDonDen></CQChuyenDonDen>
+    <CQNhanDon></CQNhanDon>
+    <NgayChuyenDon></NgayChuyenDon>
+    <CQDaGiaiQuyet></CQDaGiaiQuyet>
+    <LanDaGiaiQuyet></LanDaGiaiQuyet>
+    <NoiDungDaGiaiQuyet></NoiDungDaGiaiQuyet>
+    <ThamQuyenId></ThamQuyenId>
+    <MaThamQuyen></MaThamQuyen>
+    <TinhTrangGiaiQuyet></TinhTrangGiaiQuyet>
+    <TenCQDangGiaiQuyet></TenCQDangGiaiQuyet>
+    <MaCQDangGiaiQuyet></MaCQDangGiaiQuyet>
+    <NgayPhanGQ></NgayPhanGQ>
+    <TrangThai></TrangThai>
+    <DonThuLan1Id></DonThuLan1Id>
+    <LanGiaiQuyet></LanGiaiQuyet>
+    <MaVach></MaVach>
+    <NgayThuLy></NgayThuLy>
+  </XuLyDon>
+
+  <FileDinhKem>
+    <File>
+      <LoaiFile></LoaiFile>
+      <TenFile></TenFile>
+      <MaXuLyDon></MaXuLyDon>
+      <FileURL></FileURL>
+    </File>
+  </FileDinhKem>
+
+  <GiaiQuyetDon>
+    <MaGiaiQuyetDon>103</MaGiaiQuyetDon>
+    <MaXuLyDon>H713.02.1.KN00.2016.1</MaXuLyDon>
+    <BuocGiaiQuyet>GQKN.01</BuocGiaiQuyet>
+    <NgayCapNhat>29/12/2015</NgayCapNhat>
+    <GhiChu>Làm việc với công dân</GhiChu>
+    <FileQD></FileQD>
+  </GiaiQuyetDon>
+
+  <KetQua>
+    <MaKetQua>5</MaKetQua>
+    <MaXuLyDon>H713.02.1.KN00.2016.1</MaXuLyDon>
+    <LoaiKetQua>1</LoaiKetQua>
+    <NgayRaKQ>22/12/2015</NgayRaKQ>
+    <CQRaKetQua>H713.02</CQRaKetQua>
+    <SoTien>105</SoTien>
+    <SoDat>299</SoDat>
+    <SoNguoiDuocTraQuyenLoi></SoNguoiDuocTraQuyenLoi>
+    <SoDoiTuongBiXuLy></SoDoiTuongBiXuLy>
+    <SoDoiTuongDaBiXuLy></SoDoiTuongDaBiXuLy>
+    <FileQD></FileQD>
+  </KetQua>
+
+  <ThiHanh>
+    <MaThiHanh>1</MaThiHanh>
+    <MaXuLyDon>H713.02.1.KN00.2016.1</MaXuLyDon>
+    <NgayThiHanh>22/12/2015</NgayThiHanh>
+    <CQThiHanh>H713.02</CQThiHanh>
+    <TienDaThu>105</TienDaThu>
+    <DatDaThu>209</DatDaThu>
+  </ThiHanh>
+
+</Data>

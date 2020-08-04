@@ -1,0 +1,8 @@
+E:\Project\QLCongTacThanhTra\Source\SyncService\bin\Debug\SyncService.exe.config
+E:\Project\QLCongTacThanhTra\Source\SyncService\bin\Debug\SyncService.exe
+E:\Project\QLCongTacThanhTra\Source\SyncService\bin\Debug\SyncService.pdb
+E:\Project\QLCongTacThanhTra\Source\SyncService\bin\Debug\Com.Gosol.CMS.Utility.dll
+E:\Project\QLCongTacThanhTra\Source\SyncService\bin\Debug\Com.Gosol.CMS.Utility.pdb
+E:\Project\QLCongTacThanhTra\Source\SyncService\obj\x86\Debug\SyncService.csprojResolveAssemblyReference.cache
+E:\Project\QLCongTacThanhTra\Source\SyncService\obj\x86\Debug\SyncService.exe
+E:\Project\QLCongTacThanhTra\Source\SyncService\obj\x86\Debug\SyncService.pdb

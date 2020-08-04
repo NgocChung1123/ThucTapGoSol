@@ -1,0 +1,84 @@
+﻿p 
+{
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    color: Black;
+}
+
+.word-document 
+{
+}
+
+.word-document table
+{
+    background-color: White;    
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.word-document table tr
+{
+    border: 1px solid #666;
+}
+
+.word-document table tr td
+{
+    border: 1px solid #999;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 9pt;
+    padding: 2px;
+}
+
+
+.baocao2c table tr td 
+{
+    font-size: 8pt !important;
+}
+
+.no-border 
+{
+    border: 0 none !important;
+}
+
+.no-border tr 
+{
+    border: 0 none !important;
+}
+
+.no-border td 
+{
+    border: 0 none !important;
+}
+
+.report-form 
+{
+    background-color: #F4FAF0;
+    border: 1px solid #dedede;
+    border-radius: 7px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.report-form span 
+{
+    
+}
+
+.report-form input 
+{
+    margin-right: 20px;    
+}
+
+.report-form select 
+{
+    margin-right: 20px;
+    height: 23px;
+    position: relative;
+    top: -2px;
+}
+

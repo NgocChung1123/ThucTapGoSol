@@ -1,0 +1,67 @@
+D:\Workspace\KNTC\KNTC_DaDiem\Source\Workflow\bin\Debug\Workflow.dll
+D:\Workspace\KNTC\KNTC_DaDiem\Source\Workflow\bin\Debug\Workflow.pdb
+D:\Workspace\KNTC\KNTC_DaDiem\Source\Workflow\obj\Debug\Workflow.dll
+D:\Workspace\KNTC\KNTC_DaDiem\Source\Workflow\obj\Debug\Workflow.pdb
+E:\Work\2015\Project\KNTC Multi\Source\Source\Workflow\obj\Debug\ResolveAssemblyReference.cache
+E:\Work\2015\Project\KNTC Multi\Source\Source\Workflow\obj\Debug\Workflow.dll
+E:\Work\2015\Project\KNTC Multi\Source\Source\Workflow\obj\Debug\Workflow.pdb
+E:\Work\2015\Project\KNTC Multi\Source\Source\Workflow\bin\Debug\Workflow.dll
+E:\Work\2015\Project\KNTC Multi\Source\Source\Workflow\bin\Debug\Workflow.pdb
+E:\project\KNTC_DaDiem\Source\Workflow\bin\Debug\Workflow.dll
+E:\project\KNTC_DaDiem\Source\Workflow\bin\Debug\Workflow.pdb
+E:\project\KNTC_DaDiem\Source\Workflow\obj\Debug\Workflow.csprojResolveAssemblyReference.cache
+E:\project\KNTC_DaDiem\Source\Workflow\obj\Debug\Workflow.dll
+E:\project\KNTC_DaDiem\Source\Workflow\obj\Debug\Workflow.pdb
+E:\Workspace\KNTC_DaDiem\Source\Workflow\bin\Debug\Workflow.dll
+E:\Workspace\KNTC_DaDiem\Source\Workflow\bin\Debug\Workflow.pdb
+E:\Workspace\KNTC_DaDiem\Source\Workflow\bin\Debug\Com.Gosol.CMS.Utility.dll
+E:\Workspace\KNTC_DaDiem\Source\Workflow\bin\Debug\Com.Gosol.CMS.Utility.pdb
+E:\Workspace\KNTC_DaDiem\Source\Workflow\obj\Debug\Workflow.csprojResolveAssemblyReference.cache
+E:\Workspace\KNTC_DaDiem\Source\Workflow\obj\Debug\Workflow.dll
+E:\Workspace\KNTC_DaDiem\Source\Workflow\obj\Debug\Workflow.pdb
+E:\project\KNTC_DaDiem\Source\Workflow\bin\Debug\Com.Gosol.CMS.Utility.dll
+E:\project\KNTC_DaDiem\Source\Workflow\bin\Debug\Com.Gosol.CMS.Utility.pdb
+E:\Project\KNTC_Full\Source\Workflow\bin\Debug\Workflow.dll
+E:\Project\KNTC_Full\Source\Workflow\bin\Debug\Workflow.pdb
+E:\Project\KNTC_Full\Source\Workflow\bin\Debug\Com.Gosol.CMS.Utility.dll
+E:\Project\KNTC_Full\Source\Workflow\bin\Debug\Com.Gosol.CMS.Utility.pdb
+E:\Project\KNTC_Full\Source\Workflow\obj\Debug\Workflow.csprojResolveAssemblyReference.cache
+E:\Project\KNTC_Full\Source\Workflow\obj\Debug\Workflow.dll
+E:\Project\KNTC_Full\Source\Workflow\obj\Debug\Workflow.pdb
+D:\Project\KNTC_VungTau\Source\Workflow\obj\Debug\Workflow.dll
+D:\Project\KNTC_VungTau\Source\Workflow\obj\Debug\Workflow.pdb
+D:\Project\KNTC_VungTau\Source\Workflow\bin\Debug\Workflow.dll
+D:\Project\KNTC_VungTau\Source\Workflow\bin\Debug\Workflow.pdb
+D:\Project\KNTC_VungTau\Source\Workflow\bin\Debug\Com.Gosol.CMS.Utility.dll
+D:\Project\KNTC_VungTau\Source\Workflow\bin\Debug\Com.Gosol.CMS.Utility.pdb
+D:\Project\KNTC_VungTau\Source\Workflow\obj\Debug\Workflow.csprojResolveAssemblyReference.cache
+D:\Workspace\KNTC\KNTC_VUNGTAU\Source\Workflow\obj\Debug\Workflow.csprojResolveAssemblyReference.cache
+D:\Workspace\KNTC\KNTC_VUNGTAU\Source\Workflow\obj\Debug\Workflow.dll
+D:\Workspace\KNTC\KNTC_VUNGTAU\Source\Workflow\obj\Debug\Workflow.pdb
+D:\Workspace\KNTC\KNTC_VUNGTAU\Source\Workflow\bin\Debug\Workflow.dll
+D:\Workspace\KNTC\KNTC_VUNGTAU\Source\Workflow\bin\Debug\Workflow.pdb
+D:\Workspace\KNTC\KNTC_VUNGTAU\Source\Workflow\bin\Debug\Com.Gosol.CMS.Utility.dll
+D:\Workspace\KNTC\KNTC_VUNGTAU\Source\Workflow\bin\Debug\Com.Gosol.CMS.Utility.pdb
+D:\Workspace\Net\KNTC_VungTau\Source\Workflow\obj\Debug\Workflow.csprojResolveAssemblyReference.cache
+D:\Workspace\Net\KNTC_VungTau\Source\Workflow\obj\Debug\Workflow.dll
+D:\Workspace\Net\KNTC_VungTau\Source\Workflow\obj\Debug\Workflow.pdb
+D:\Workspace\Net\KNTC_VungTau\Source\Workflow\bin\Debug\Workflow.dll
+D:\Workspace\Net\KNTC_VungTau\Source\Workflow\bin\Debug\Workflow.pdb
+D:\Workspace\Net\KNTC_VungTau\Source\Workflow\bin\Debug\Com.Gosol.CMS.Utility.dll
+D:\Workspace\Net\KNTC_VungTau\Source\Workflow\bin\Debug\Com.Gosol.CMS.Utility.pdb
+D:\Workspace\Net\CongTacThanhTra\Source\Workflow\bin\Debug\Workflow.dll
+D:\Workspace\Net\CongTacThanhTra\Source\Workflow\bin\Debug\Workflow.pdb
+D:\Workspace\Net\CongTacThanhTra\Source\Workflow\bin\Debug\Com.Gosol.CMS.Utility.dll
+D:\Workspace\Net\CongTacThanhTra\Source\Workflow\bin\Debug\Com.Gosol.CMS.Utility.pdb
+D:\Workspace\Net\CongTacThanhTra\Source\Workflow\obj\Debug\Workflow.csprojResolveAssemblyReference.cache
+D:\Workspace\Net\CongTacThanhTra\Source\Workflow\obj\Debug\Workflow.dll
+D:\Workspace\Net\CongTacThanhTra\Source\Workflow\obj\Debug\Workflow.pdb
+E:\Project_2018\KNTC_Portal\Workflow\bin\Debug\Workflow.dll
+E:\Project_2018\KNTC_Portal\Workflow\bin\Debug\Workflow.pdb
+E:\Project_2018\KNTC_Portal\Workflow\bin\Debug\Com.Gosol.CMS.Utility.dll
+E:\Project_2018\KNTC_Portal\Workflow\bin\Debug\Com.Gosol.CMS.Utility.pdb
+E:\Project_2018\KNTC_Portal\Workflow\obj\Debug\Workflow.csprojAssemblyReference.cache
+E:\Project_2018\KNTC_Portal\Workflow\obj\Debug\Workflow.csproj.CoreCompileInputs.cache
+E:\Project_2018\KNTC_Portal\Workflow\obj\Debug\Workflow.csproj.CopyComplete
+E:\Project_2018\KNTC_Portal\Workflow\obj\Debug\Workflow.dll
+E:\Project_2018\KNTC_Portal\Workflow\obj\Debug\Workflow.pdb

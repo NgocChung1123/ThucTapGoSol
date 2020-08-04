@@ -1,0 +1,88 @@
+
+        <div class="col-lg-12" style="font-size: 18pt; text-align: center; background-color: #d9edf7; font-family: Times New Roman;">THỐNG KÊ CUỘC GỌI ĐIỂN HÌNH</div>
+        <div class="col-lg-12">
+            <table style="border: 0 none; font-family: Arial 'Times New Roman'; width: 100%" cellspacing="0px">
+                <tbody><tr style="border: 0.6pt solid rgb(153, 153, 153); color: black;">
+                    <td style="border: 0 none;"></td>
+                    <td style="border: 0 none;">
+                        <label class="col-lg-2 col-sm-2 control-label">Đơn vị:</label></td>
+                    <td style="border: 0 none;">
+                        <span id="MainContent_lblTenDonVi_Report">Tất cả</span></td>
+                    <td style="border: 0 none;">
+                        <label class="col-lg-2 col-sm-2 control-label">Tổ nhóm:</label></td>
+                    <td style="border: 0 none;">
+                        <span id="MainContent_lblTenToNhom_Report">Tất cả</span></td>
+                </tr>
+                <tr style="border: 0.6pt solid rgb(153, 153, 153); color: black;">
+                    <td style="border: 0 none;"></td>
+                    <td style="border: 0 none;">
+                        <label class="col-lg-2 col-sm-2 control-label">Danh số:</label></td>
+                    <td style="border: 0 none;">
+                        <span id="MainContent_lblDanhSo_Report"></span></td>
+                    <td style="border: 0 none;">
+                        <label class="col-lg-2 col-sm-2 control-label">Họ tên:</label></td>
+                    <td style="border: 0 none;">
+                        <span id="MainContent_lblHoTen_Report"></span></td>
+                </tr>
+                <tr style="border: 0.6pt solid rgb(153, 153, 153); color: black;">
+                    <td style="border: 0 none;"></td>
+                    <td style="border: 0 none;">
+                        <label class="col-lg-2 col-sm-2 control-label">Từ ngày:</label></td>
+                    <td style="border: 0 none;">
+                        <span id="MainContent_lblTuNgay_Report">25/06/2017</span></td>
+                    <td style="border: 0 none;">
+                        <label class="col-lg-2 col-sm-2 control-label">Đến ngày:</label></td>
+                    <td style="border: 0 none;">
+                        <span id="MainContent_lblDenNgay_Report">22/01/2018</span></td>
+                </tr>
+                <tr style="border: 0.6pt solid rgb(153, 153, 153); color: black;">
+                    <td style="border: 0 none;"></td>
+                    <td style="border: 0 none;">
+                        <label class="col-lg-2 control-label">Cuộc gọi điển hình: </label>
+                    </td>
+                    <td style="border: 0 none;">
+                        <span id="MainContent_lblCuocGoiDienHinh_Report">Tất cả</span></td>
+                    <td style="border: 0 none;">
+                        <label class="col-lg-2 col-sm-2 control-label">Giám sát viên:</label></td>
+                    <td style="border: 0 none;">
+                        <span id="MainContent_lblGIamSatVien_Report">Tất cả</span></td>
+                </tr>
+            </tbody></table>
+        </div>
+        <table id="example2" class="table table-bordered table-hover border" style="border: 0 none; font-family: Times New Roman; width: 100%" cellspacing="0px">
+            <thead>
+                <tr style="border: 0.6pt solid rgb(153, 153, 153); color: black;">
+                    <th style="width: 10%; text-align: center; background-color: #d9edf7">STT</th>
+                    <th style="text-align: center; background-color: #d9edf7">Cuộc gọi điển hình</th>
+                    <th style="width: 30%; text-align: center; background-color: #d9edf7">Tỷ lệ(%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                        <tr style="border: 0.6pt solid rgb(153, 153, 153); color: black;">
+                            <td style="text-align: center">
+                                1
+                            </td>
+                            <td>
+                                Bình thường
+                            </td>
+                            <td style="text-align: center">
+                                <span id="MainContent_rptReport_lblTyLe_0">96.77</span>
+                            </td>
+                        </tr>
+                    
+                        <tr style="border: 0.6pt solid rgb(153, 153, 153); color: black;">
+                            <td style="text-align: center">
+                                2
+                            </td>
+                            <td>
+                                ĐTV Yếu
+                            </td>
+                            <td style="text-align: center">
+                                <span id="MainContent_rptReport_lblTyLe_1">3.23</span>
+                            </td>
+                        </tr>
+                    
+            </tbody>
+        </table>
+    

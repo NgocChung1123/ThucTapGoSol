@@ -1,0 +1,268 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body{margin:0 !important;
+	padding:0 !important;
+	/*background:#f8f8f8;*/
+    background:url(../images/img_login/imgpsh_fullsize.jpg) center top repeat #477fae;
+}
+.swap_login{
+	width:100%;
+	background:#f8f8f8;
+	display:block;
+	
+}
+.swap_top_login{
+	width:100%;
+	height:70px;
+	background:url(../images/bg_head.png) left center no-repeat #d1030e;
+	}
+.swap_content_login{
+	width:100%;
+}
+.swap_footer_login{
+	font-size:12px;
+	font-family:Arial;
+	color:#949494;
+	position:absolute;
+	padding-top:10px;
+	width:100%;
+	height:30px;
+	background-color:#e4e4e4;
+	
+	bottom:0;
+	
+}
+.swap_footer_login span ten-co-quan{
+    text-align:left;
+    float:left;
+    margin-left:15px;
+}
+
+.swap_footer_login span teamview{
+    float: right;
+    margin-right: 15px;
+}
+
+.swap_footer_login span a{
+    text-decoration:none;
+    color:#2a8ebf;
+}
+
+.swap_formlogin{
+	left: 40%;
+    /*margin-left: -250px;*/
+    position: absolute;
+    top: 80px;
+    /*width: 300px;*/
+}
+.clear_toplogin{
+	height:5px;
+	background:#fff;
+	width:100%;
+}
+.header_loginform{
+	background:url(../images/logo_vungtau.png) left center no-repeat;
+	padding-left:45px;
+	height:56px;
+    padding-top: 15px;
+    margin-left: 15px;
+}
+.header_loginform h4{
+	font-size:20px !important;
+	line-height: 20px !important;
+	padding:0;
+	margin:0;
+	font-family:Times New Roman;
+	font-weight:bold;
+	color:#fff;
+	
+}
+#name_soft_login{
+	font-family:Arial;
+	font-size:12px;
+	color:#fcfd49;
+	line-height:25px;
+}
+.clear_loginform{
+	background:url(../images/icon_sen.png) center no-repeat;
+	width:100%;
+	height:25px;
+	/*margin-top:10px;*/
+    margin-bottom:2px;
+}
+.name_form_login{
+	 text-align:center;
+     padding:2px;
+}
+
+.name_form_login img{
+	 vertical-align: bottom;
+}
+
+.name_form_login span.co-quan{
+	 font-size:12px;
+}
+
+.name_form_login span.info{
+	 font-size: 12px;
+     color: #989898;
+}
+
+.name_form_login p{
+	font-family: Arial;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #2196F3;
+}
+.content_loginform{
+    /*background:rgba(255,255,255,1);*/
+
+	height:520px;
+	width:100%;
+    border-bottom: 5px solid #f9521e; /*#2196F3;*/
+	/*padding:10px 30px;*/
+}
+.left_form_login{
+	width:650px;
+    height:350px;
+	float:left;
+}
+
+.left_form_login_img{
+	width:650px;
+    height:350px;
+	float:left;
+    background:url(../images/img_login/vungtau.jpg) center top repeat #477fae;
+    border-top-left-radius: 2px;
+}
+
+.left_form_login_info{
+	width:650px;
+    height:130px;
+	float:left;
+    background-color:#fff;
+}
+
+.right_form_login input{
+	width: 90%;
+	height:17px;
+	border:1px solid #ccc;
+	padding: 7px 10px;
+    border-radius:2px;
+}
+.label_login{
+	font-size:13px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#4e4c4c;
+	line-height:25px;
+	
+}
+
+.btndangnhap_login{
+	/*background:url(../images/btn_dangnhap.png) left center no-repeat;*/
+    background-color:#009688;
+	height:25px;
+	width:102px;
+	display:block;
+	padding-top: 10px;
+	padding-left:42px;
+	color:#fff;
+	font-size:14px;
+	font-family:Arial;
+	text-decoration:none;
+	float:left;
+    border-radius:5px;
+    margin-top:10px;
+
+}
+.btndangnhap_login:hover, .btndangnhap_login:focus {
+	/*background:url(../images/btn_dangnhap2.png) left center no-repeat;*/
+	background-color:#02675d;
+	
+	
+}
+.forget_pas_login{
+	float: right;
+	margin-right:10px;
+	margin-top:20px;
+	font-size:12px;
+	font-family:Arial;
+	color:#A0A0A0;
+	text-decoration:none;
+}
+.right_form_login{
+	width:auto;
+	float:left;
+	width:300px;
+	/*margin-left:35px;*/
+	background-color: #fff;
+    padding:15px;
+    height:490px;
+    color:#4e4c4c;
+    /*border-top-right-radius: 4px;*/
+    opacity: 0.9;
+}
+
+.right_form_login p{
+	margin-top:0px;
+}
+
+.right_form_login p.ho-tro-pm {
+    
+text-align: left;
+font-size: 12px;
+font-family: Arial;
+}
+
+.right_form_login p.ho-tro-pm a{
+    text-align:center;
+    text-decoration:none;
+    color:#1E8BB0;
+    font-size:12px;
+    font-family: Arial;
+}
+.info_local_login{
+	margin-top:-25px;
+	padding:0;
+	font-size:12px;
+	font-weight:bold;
+	font-family:Arial;
+	color:#282828;
+	text-transform:none;
+	width:200px;
+}
+.local_thanhtra{
+	padding-bottom:10px;
+	font-size:12px;
+	font-weight:bold;
+	font-family:Arial;
+	color:#282828;
+	text-transform:uppercase;
+	width:auto;
+	line-height:25px;
+	color: #179de1;
+}
+.info_thanhtra{
+	font-weight:normal;
+	font-family:Arial;
+	color:#282828;
+	text-transform:none;
+	width:200px;
+	margin-top:20px;
+	line-height:18px;
+	
+}
+.red{
+	color:#CB0003;
+}
+.info_thanhtra a{
+	color:#0168B3;
+	text-decoration:none;
+}
+.lblError {
+    color: #F00;
+    vertical-align: 3px;
+    margin-left: 6px;
+}
+

@@ -1,0 +1,72 @@
+﻿.breadcrumb {
+    padding: 2px 0px !important;
+    background-color: #fff !important;
+}
+
+.panel {
+    border-radius:0px !important;
+}
+
+.panel-heading {
+    border-radius: 0px !important;
+}
+
+.list-group-item {
+    border: none !important;
+    margin-bottom: 5px !important;
+}
+
+.btn {
+    border: 1px solid !important;
+}
+
+.form-group {
+    margin-bottom:10px !important;
+}
+
+.form-group label {
+    text-align: left !important;
+}
+
+.form-control {
+    border-radius:0 !important;
+}
+
+.select2-container--default .select2-selection--single {
+    border-radius: 0 !important;
+}
+
+/*a {
+    color: rgb(51,122,183) !important;
+}*/
+
+.tab-pane{
+    margin-bottom:5px;
+}
+
+.divInsert {
+    background-color:white;
+    border:1px solid;
+    padding:2px 7px;
+}
+
+input[type="checkbox"] {
+    margin: 4px 0 0;
+    margin-top: 1px \9;
+    line-height: normal;
+}
+
+.cac-tin-tuc-khac {
+    background-color: lightgray;
+    border-bottom: 2px solid blue;
+    padding: 7px;
+    color: blue;
+    margin-bottom: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+.item-tintuc-title-mang-tin a {
+    color: #337ab7 !important;
+}

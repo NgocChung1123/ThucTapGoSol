@@ -1,0 +1,15 @@
+﻿body {
+}
+
+a.current
+{
+    color: Green;
+}
+.input-Normal
+{
+    width: 130px;
+}
+.input-Medium
+{
+    width: 336px;
+}

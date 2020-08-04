@@ -1,0 +1,13 @@
+D:\Workspace\Net\KNTC_VungTau\Source\SyncApp\bin\SyncApp.dll.config
+D:\Workspace\Net\KNTC_VungTau\Source\SyncApp\bin\SyncApp.dll
+D:\Workspace\Net\KNTC_VungTau\Source\SyncApp\bin\SyncApp.pdb
+D:\Workspace\Net\KNTC_VungTau\Source\SyncApp\obj\Debug\SyncApp.csprojResolveAssemblyReference.cache
+D:\Workspace\Net\KNTC_VungTau\Source\SyncApp\obj\Debug\SyncApp.dll
+D:\Workspace\Net\KNTC_VungTau\Source\SyncApp\obj\Debug\SyncApp.pdb
+E:\Project_2018\KNTC_Portal\SyncApp\bin\SyncApp.dll.config
+E:\Project_2018\KNTC_Portal\SyncApp\bin\SyncApp.dll
+E:\Project_2018\KNTC_Portal\SyncApp\bin\SyncApp.pdb
+E:\Project_2018\KNTC_Portal\SyncApp\obj\Debug\SyncApp.csprojAssemblyReference.cache
+E:\Project_2018\KNTC_Portal\SyncApp\obj\Debug\SyncApp.csproj.CoreCompileInputs.cache
+E:\Project_2018\KNTC_Portal\SyncApp\obj\Debug\SyncApp.dll
+E:\Project_2018\KNTC_Portal\SyncApp\obj\Debug\SyncApp.pdb

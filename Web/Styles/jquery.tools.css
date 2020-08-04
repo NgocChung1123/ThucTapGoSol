@@ -1,0 +1,17 @@
+#stt_tooltip {
+	display: none;
+	background:url("jquery_tools/tooltip/black_arrow.png");
+	height:120px;
+	width:210px;
+	font-size:11px;
+	color:#fff;	
+}
+
+#stt_tooltip > div {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 20px;
+}
+
+

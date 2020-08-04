@@ -1,0 +1,167 @@
+ <h4 class="modal-title"><i class="icon fa fa-windows"></i>&nbsp Báo cáo k?t qu? thanh tra</h4>
+<h4 class="modal-title"><i class="glyphicon glyphicon-bullhorn"></i>&nbsp Thông báo</h4>
+ <script> alert(1) </script>
+validate[required,custom[email]]
+
+<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true"
+    CodeBehind="CanBoManage.aspx.cs" Inherits="Com.Gosol.CMS.Web.CanBoManage" EnableEventValidation="false" %>
+ $("#MainContent_hdfCommandCode").val(commandCode);
+$('#myModal').modal({
+    backdrop: 'static',
+    keyboard: false
+});
+((CONVERT(date,b.NgayNhap,103) >= CONVERT(date,@Tungay,103)  or @Tungay is null) 
+	and (CONVERT(date, b.NgayNhap,103) <= CONVERT(date,@DenNgay,103) or @DenNgay is null))
+
+
+TTKT-98
+TTKT-95
+TTKT-66
+TTKT-62
+TTKT-63
+TTKT-64
+TTKT-65
+TTKT-66
+TTKT-69
+
+
+29/09/2018
+48
+97
+102
+
+
+CTNhapTTB them NguonVonDauTu
+them
+
+
+public enum enumTTB_TrangThaiTTBTaiKhoa
+    {
+        Tot = 0,
+        ThuHoi = 1,
+        Hong = 2,
+        SuaChua = 3,
+    }
+
+ public enum enumTTB_TTHuy_DuTruThanhLy
+    {
+        ChuaThanhLy=1, chuyen ve kho thanh ly nhung chua ban
+        DaThanhLy=2, dây là tr?ng thái chuy?n v? kho tái s? d?ng
+        KhongThanhLy=3,
+	HoanTatThanhLy=4--dây 
+    }
+
+    public enum enumTTLKhoaPhongDuTruTTB
+    {
+        ChuaLinh=1,
+        DaLinh=2,
+    }
+    public enum enumTTTongKhoaPhongDuTruTTT
+    {
+        ChuaDuyet=1,
+        DaDuyet = 2,
+        DaHuy = 3,
+        DaLinh = 4,
+    }
+
+SELECT * from CTXuatTrangThietBi where KhoTrangThietBiID=331
+SELECT * from XuatTrangThietBi WHERE XuatTrangThietBiID=150
+SELECT * from CTNhapTTB
+SELECT * from NhapTTB
+SELECT * from danh_muc_loai_trang_thiet_bi
+SELECT * from KhoTrangThietBi WHERE NoiLuuTru=5
+SELECT * from CTKhauHaoTrangThietBi
+SELECT * from danh_muc_loai_trang_thiet_bi
+SELECT * from danh_muc_trang_thiet_bi
+SELECT * from TrangThietBiTaiKhoa
+SELECT * from danh_muc_quoc_gia
+SELECT * from danh_muc_nha_san_xuat
+SELECT * from danh_muc_loai_trang_thiet_bi
+SELECT * from danh_muc_nhom_trang_thiet_bi
+SELECT * from CTKhauHaoTrangThietBi
+SELECT * from danh_muc_khoa
+SELECT * from danh_muc_don_vi_tinh
+SELECT * from KiemKeTTB where PhongKhoaID=0 ORDER BY NgayKiemKe desc
+SELECT * from CTKiemKeTTB WHERE KiemKeTTBID=131
+SELECT * from can_bo_benh_vien
+SELECT * from Menu
+
+SELECT * from CTPhieuLinhTTBKhoaPhong
+SELECT * from PhieuLinhTTBKhoaPhong
+SELECT * FROM DanhMucKhoTrangThietBi
+SELECT * from  PhieuThanhLyTTB
+SELECT * from  CTPhieuThanhLyTTB where CTPhieuThanhLyTTBid=241
+ 
+
+CREATE DEFINER=`vnio`@`%` PROCEDURE `BaoCaoTheKho_TaiKho`(
+IN pTuNgay DATETIME,
+IN pDenNgay DATETIME,
+IN pNoiLuuTru INT
+)
+BEGIN
+ DROP TABLE IF EXISTS tmp_TheKhoTaiKho_SoLuongNhapDauKy;		
+ DROP TABLE IF EXISTS tmp_TheKhoTaiKho_SoLuongXuatDauKy;		
+ DROP TABLE IF EXISTS tmp_TheKhoTaiKho_SoLuongTonDauKy;		
+  DROP TABLE IF EXISTS tmp_TheKhoTaiKho_SoLuongNhapCuoiKy;		
+ DROP TABLE IF EXISTS tmp_TheKhoTaiKho_SoLuongXuatCuoiKy;		
+ DROP TABLE IF EXISTS tmp_TheKhoTaiKho_SoLuongTonCuoiKy;		
+CREATE TEMPORARY TABLE IF NOT EXISTS tmp_TheKhoTaiKho_SoLuongNhapDauKy	
+(
+select a.TrangThietBiID,count(*) SoLuongNhapDauKy from KhoTrangThietBi a
+LEFT JOIN CTNhapTTB b on a.CTNhapTTBID= b.CTNhapTTBID
+LEFT JOIN NhapTTB c on b.NhapTTBID=c.NhapTTBID
+WHERE DATE(c.NgayNhap) <DATE(pTuNgay) and a.NoiLuuTru=pNoiLuuTru
+GROUP BY a.TrangThietBiID
+);
+ 
+CREATE TEMPORARY TABLE IF NOT EXISTS tmp_TheKhoTaiKho_SoLuongXuatDauKy
+(
+select a.TrangThietBiID,count(*) SoLuongXuatDauKy from CTXuatTrangThietBi a
+LEFT JOIN KhoTrangThietBi b on a.KhoTrangThietBiID= b.KhoTrangThietBiID
+LEFT JOIN XuatTrangThietBi c on a.XuatTrangThietBiID=c.XuatTrangThietBiID
+WHERE DATE(c.NgayXuat) <DATE(pTuNgay) and a.NoiLuuTru=pNoiLuuTru
+GROUP BY a.TrangThietBiID
+);
+
+CREATE TEMPORARY TABLE IF NOT EXISTS tmp_TheKhoTaiKho_SoLuongTonCuoiKy
+SELECT a.TrangThietBiID,a.SoLuongNhapDauKy,b.SoLuongXuatDauKy
+(IFNULL(a.SoLuongNhapDauKy,0) - IFNULL(b.SoLuongXuatDauKy,0)) AS SoLuongTonDauKy
+from tmp_TheKhoTaiKho_SoLuongNhapDauKy a
+INNER JOIN  tmp_TheKhoTaiKho_SoLuongXuatDauKy b on a.TrangThietBiID=b.TrangThietBiID
+);
+-- Thong ke the kho cuoi ky
+CREATE TEMPORARY TABLE IF NOT EXISTS tmp_TheKhoTaiKho_SoLuongNhapCuoiKy
+(
+select a.TrangThietBiID,count(*) SoLuongNhapCuoiKy from KhoTrangThietBi a
+LEFT JOIN CTNhapTTB b on a.CTNhapTTBID= b.CTNhapTTBID
+LEFT JOIN NhapTTB c on b.NhapTTBID=c.NhapTTBID
+WHERE DATE(c.NgayNhap) <DATE(pTuNgay) and a.NoiLuuTru=pNoiLuuTru
+GROUP BY a.TrangThietBiID
+);
+ 
+CREATE TEMPORARY TABLE IF NOT EXISTS tmp_TheKhoTaiKho_SoLuongXuatCuoiKy
+(
+select a.TrangThietBiID,count(*) SoLuongXuatCuoiKy from CTXuatTrangThietBi a
+LEFT JOIN KhoTrangThietBi b on a.KhoTrangThietBiID= b.KhoTrangThietBiID
+LEFT JOIN XuatTrangThietBi c on a.XuatTrangThietBiID=c.XuatTrangThietBiID
+WHERE DATE(c.NgayXuat) >=DATE(pTuNgay) and DATE(c.NgayXuat) <=DATE(pDenNgay)  and a.NoiLuuTru=pNoiLuuTru
+GROUP BY a.TrangThietBiID
+);
+
+CREATE TEMPORARY TABLE IF NOT EXISTS tmp_TheKhoTaiKho_SoLuongTonCuoiKy
+(
+SELECT a.TrangThietBiID,a.SoLuongNhapCuoiKy,b.SoLuongXuatCuoiKy
+(IFNULL(a.SoLuongNhapCuoiKy,0) - IFNULL(b.SoLuongXuatCuoiKy,0)) AS SoLuongTonDauKy
+from tmp_TheKhoTaiKho_SoLuongNhapCuoiKy a
+INNER JOIN  tmp_TheKhoTaiKho_SoLuongXuatCuoiKy b on a.TrangThietBiID=b.TrangThietBiID
+);
+  
+END
+
+
+
+Báo cáo ngày 28/11/2018: -
+- làm ch?c nang nh?t ký bán hàng
+-Fix bug ch?c nang nh?p kho
+
+

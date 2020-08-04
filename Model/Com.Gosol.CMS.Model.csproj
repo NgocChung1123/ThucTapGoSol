@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{09663605-6982-4E04-BACF-361DE968E49D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Com.Gosol.CMS.Model</RootNamespace>
+    <AssemblyName>Com.Gosol.CMS.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Com.Gosol.CMS.Model.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\VS2010\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;D:\VS2010\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Com.Gosol.CMS.Model.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\VS2010\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;D:\VS2010\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaoCao2aDonThuInfo.cs" />
+    <Compile Include="BaoCao2aInfo.cs" />
+    <Compile Include="BaoCao2bDonThuInfo.cs" />
+    <Compile Include="BaoCao2bInfo.cs" />
+    <Compile Include="BaoCao2cDonThuInfo.cs" />
+    <Compile Include="BaoCao2cInfo.cs" />
+    <Compile Include="BaoCao2dDonThuInfo.cs" />
+    <Compile Include="BaoCao2dInfo.cs" />
+    <Compile Include="BaoCaoChuyenGQInfo.cs" />
+    <Compile Include="BaoCaoQLNNInfo.cs" />
+    <Compile Include="BCTongHopXuLyInfo.cs" />
+    <Compile Include="CanBoInfo.cs" />
+    <Compile Include="CanBoJoinInfo.cs" />
+    <Compile Include="CapInfo.cs" />
+    <Compile Include="CauHinhModuleInfo.cs" />
+    <Compile Include="CauHoi\CauHoiInfo.cs" />
+    <Compile Include="CauHoi\TraLoiInfo.cs" />
+    <Compile Include="ChucNangInfo.cs" />
+    <Compile Include="ChucVuInfo.cs" />
+    <Compile Include="DanhMuc\DMLinhVucInfo.cs" />
+    <Compile Include="DanhMuc\DMLoaiThuTucInfo.cs" />
+    <Compile Include="DanhMuc\DMLoaiTinInfo.cs" />
+    <Compile Include="DanhMuc\DMThuTucInfo.cs" />
+    <Compile Include="DanhMuc\DMTinTucInfo.cs" />
+    <Compile Include="DocumentInfo.cs" />
+    <Compile Include="DonThu\DoiTuongKhieuNaiModel.cs" />
+    <Compile Include="DonThu\DoiTuongKNInfo.cs" />
+    <Compile Include="DonThu\DonThuInfo.cs" />
+    <Compile Include="DonThu\DonThuJson.cs" />
+    <Compile Include="DonThu\DonThuModel.cs" />
+    <Compile Include="DonThu\KetQuaInfo.cs" />
+    <Compile Include="DonThu\NguoiDaiDienInfo.cs" />
+    <Compile Include="DonThu\NhomKhieuNaiModel.cs" />
+    <Compile Include="DonThu\ThiHanhInfo.cs" />
+    <Compile Include="DonThu\XuLyDonInfo.cs" />
+    <Compile Include="FileHoSoInfo.cs" />
+    <Compile Include="FileTaiLieuInfo.cs" />
+    <Compile Include="HuongXuLyInfo.cs" />
+    <Compile Include="LichSuTraCuu\LichSuTraCuuChiTietInfo.cs" />
+    <Compile Include="LichSuTraCuu\LichSuTraCuuInfo.cs" />
+    <Compile Include="LichTiepDan\LichTiepDanInfo.cs" />
+    <Compile Include="SyncInfo.cs" />
+    <Compile Include="ThemeConfigInfo.cs" />
+    <Compile Include="CoQuanInfo.cs" />
+    <Compile Include="DanTocInfo.cs" />
+    <Compile Include="DiaChiInfo.cs" />
+    <Compile Include="HuyenInfo.cs" />
+    <Compile Include="LoaiKhieuToInfo.cs" />
+    <Compile Include="MenuInfo.cs" />
+    <Compile Include="NguoiDungInfo.cs" />
+    <Compile Include="NguoiDungJoinInfo.cs" />
+    <Compile Include="NhomKNInfo.cs" />
+    <Compile Include="NhomNguoiDungInfo.cs" />
+    <Compile Include="DonThuGiaiQuyetInfo.cs" />
+    <Compile Include="PhongBanInfo.cs" />
+    <Compile Include="QuocTichInfo.cs" />
+    <Compile Include="SystemConfigInfo.cs" />
+    <Compile Include="SystemLogInfo.cs" />
+    <Compile Include="TinhInfo.cs" />
+    <Compile Include="TransitionHistoryInfo.cs" />
+    <Compile Include="WorkFlow_Model\FileWFInfo.cs" />
+    <Compile Include="WorkFlow_Model\WorkFlowInfo.cs" />
+    <Compile Include="XaInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Com.Gosol.CMS.Model.dll" />
+    <Content Include="bin\Debug\Com.Gosol.CMS.Model.pdb" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<ArrayOfMenu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Menu>
+        <MenuName>Kế toán chi tiết</MenuName>
+        <MenuUrl>tab1</MenuUrl>
+        <MenuIcon>/image/ketoanchitiet/ketoanchitiet.png</MenuIcon>
+        <Items>
+            <Item>
+                <ItemName>Kế toán tiền vốn</ItemName>
+                <ItemIcon>/image/ketoanchitiet/ketoantienvon.png</ItemIcon>
+                <ItemUrl>/CapitalAccounting/CapitalAccounting.aspx</ItemUrl>
+                <EntityType>ACL</EntityType>
+                <AccessLevel>Read</AccessLevel>
+            </Item>
+            <!--
+            <Item>
+                <ItemName>Kế toán hàng hóa</ItemName>
+                <ItemIcon>/image/ketoanchitiet/ketoanhanghoa.png</ItemIcon>
+                <ItemUrl>#</ItemUrl>
+                <EntityType>ACL</EntityType>
+                <AccessLevel>Delete</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Kế toán hóa đơn dịch vụ</ItemName>
+                <ItemIcon>/image/ketoanchitiet/ketoanhoadondichvu.png</ItemIcon>
+                <ItemUrl>#</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Các tài khoản kế toán khác</ItemName>
+                <ItemIcon>/image/ketoanchitiet/ketoankhac.png</ItemIcon>
+                <ItemUrl>#</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Kế toán tài khoản ngoài bảng</ItemName>
+                <ItemIcon>/image/ketoanchitiet/ngoaibang.png</ItemIcon>
+                <ItemUrl>#</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            -->
+        </Items>
+    </Menu>
+    <Menu>
+        <MenuName>Sổ kế toán</MenuName>
+        <MenuUrl>tab2</MenuUrl>
+        <MenuIcon>/image/soketoan/soketoan.png</MenuIcon>
+        <Items>
+            <Item>
+                <ItemName>Sổ chi tiết</ItemName>
+                <ItemIcon>/image/soketoan/sochitiet.png</ItemIcon>
+                <ItemUrl>/DetailBook/AccountingDetailNotes.aspx</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Sổ tổng hợp</ItemName>
+                <ItemIcon>/image/soketoan/sotonghop.png</ItemIcon>
+                <ItemUrl>/GeneralBook/GeneralBook.aspx</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <!--
+            <Item>
+                <ItemName>Sổ thực hiện dự án</ItemName>
+                <ItemIcon>/image/soketoan/sothuchienduan.png</ItemIcon>
+                <ItemUrl>#</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Sổ tài sản cố định</ItemName>
+                <ItemIcon>/image/soketoan/sotaisan.png</ItemIcon>
+                <ItemUrl>#</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Báo cáo thuế giá trị gia tăng</ItemName>
+                <ItemIcon>/image/soketoan/baocaothue.png</ItemIcon>
+                <ItemUrl>#</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            -->
+        </Items>
+    </Menu>
+    <!--
+    <Menu>
+        <MenuName>Kế toán tổng hợp</MenuName>
+        <MenuUrl>tab3</MenuUrl>
+        <MenuIcon>/image/ketoantonghop/ketoantonghop.png</MenuIcon>
+        <Items>
+            <Item>
+                <ItemName>Xác nhận lương cơ bản</ItemName>
+                <ItemIcon>/image/ketoantonghop/luong.png</ItemIcon>
+                <ItemUrl>#</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Xác nhận chi phí dở dang</ItemName>
+                <ItemIcon>/image/ketoantonghop/dodang.png</ItemIcon>
+                <ItemUrl>#</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Xác nhận nguyên vật liệu sử dụng</ItemName>
+                <ItemIcon>/image/ketoantonghop/nguyenvatlieu.png</ItemIcon>
+                <ItemUrl>#</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Tính giá vốn bình quân theo kỳ</ItemName>
+                <ItemIcon>/image/ketoantonghop/vonbq.png</ItemIcon>
+                <ItemUrl>#</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Phân bổ công cụ, dụng cụ</ItemName>
+                <ItemIcon>/image/ketoantonghop/congcudungcu.png</ItemIcon>
+                <ItemUrl>#</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Khấu hao tài sản cố định</ItemName>
+                <ItemIcon>/image/ketoantonghop/khauhao.png</ItemIcon>
+                <ItemUrl>#</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Phân bổ chi phí ban quản lý dự án</ItemName>
+                <ItemIcon>/image/ketoantonghop/bqlda.png</ItemIcon>
+                <ItemUrl>#</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Quyết toán vốn đầu tư dự án</ItemName>
+                <ItemIcon>/image/ketoantonghop/quyettoan.png</ItemIcon>
+                <ItemUrl>#</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Tổng hợp kết quả hoạt động</ItemName>
+                <ItemIcon>/image/ketoantonghop/tonghop.png</ItemIcon>
+                <ItemUrl>#</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+        </Items>
+    </Menu>
+    -->    
+    <Menu>
+        <MenuName>Báo cáo</MenuName>
+        <MenuUrl>tab4</MenuUrl>
+        <MenuIcon>/image/baocao/baocao.png</MenuIcon>
+        <Items>
+            <Item>
+                <ItemName>Báo cáo tài chính</ItemName>
+                <ItemIcon>/image/baocao/taichinh.png</ItemIcon>
+                <ItemUrl>/FinancialReport.aspx</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <!--
+            <Item>
+                <ItemName>Báo cáo quyết toán dự án</ItemName>
+                <ItemIcon>/image/baocao/quyettoan.png</ItemIcon>
+                <ItemUrl>#</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Báo cáo kho bạc</ItemName>
+                <ItemIcon>/image/baocao/khobac.png</ItemIcon>
+                <ItemUrl>#</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            -->
+        </Items>
+    </Menu>
+    <Menu>
+        <MenuName>Quản lý danh mục</MenuName>
+        <MenuUrl>#</MenuUrl>
+        <MenuIcon>/image/danhmuc/quanlydm.png</MenuIcon>
+        <Items>            
+            <Item>
+                <ItemName>Danh mục công ty</ItemName>
+                <ItemIcon>/image/danhmuc/congty.png</ItemIcon>
+                <ItemUrl>/AgencyManage.aspx</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Danh mục nhân viên</ItemName>
+                <ItemIcon>/image/danhmuc/nhanvien.png</ItemIcon>
+                <ItemUrl>/StaffManage.aspx</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Danh mục TK kế toán</ItemName>
+                <ItemIcon>/image/danhmuc/tkketoan.png</ItemIcon>
+                <ItemUrl>/AccountManage.aspx</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Danh mục nguồn vốn</ItemName>
+                <ItemIcon>/image/danhmuc/nguonvon.png</ItemIcon>
+                <ItemUrl>/ResourcesManage.aspx</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Danh mục gói thầu</ItemName>
+                <ItemIcon>/image/danhmuc/goithau.png</ItemIcon>
+                <ItemUrl>/PackageManage.aspx</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Danh mục dự án</ItemName>
+                <ItemIcon>/image/danhmuc/duan.png</ItemIcon>
+                <ItemUrl>/ProjectManage.aspx</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>           
+        </Items>
+    </Menu>
+    <Menu>
+        <MenuName>Hệ thống</MenuName>
+        <MenuUrl>#</MenuUrl>
+        <MenuIcon>/image/danhmuc/icon_system.png</MenuIcon>
+        <Items>
+            <Item>
+                <ItemName>Thiết lập quyền truy cập</ItemName>
+                <ItemIcon>/image/danhmuc/icon_access_control_small.png</ItemIcon>
+                <ItemUrl>/RoleManager/RolesManager.aspx</ItemUrl>
+                <EntityType>*</EntityType>
+                <AccessLevel>*</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Quản lý người dùng</ItemName>
+                <ItemIcon>/image/danhmuc/user.png</ItemIcon>
+                <ItemUrl>/RoleManager/UserManage.aspx</ItemUrl>
+                <EntityType>User</EntityType>
+                <AccessLevel>Read</AccessLevel>
+            </Item>
+            <Item>
+                <ItemName>Quản lý nhóm người dùng</ItemName>
+                <ItemIcon>/image/danhmuc/group.png</ItemIcon>
+                <ItemUrl>/RoleManager/GroupManage.aspx</ItemUrl>
+                <EntityType>Group</EntityType>
+                <AccessLevel>Read</AccessLevel>
+            </Item>
+        </Items>
+    </Menu>
+</ArrayOfMenu>

@@ -1,0 +1,14 @@
+﻿.word-document td
+{
+   width: 35px;
+   vertical-align: middle;
+   text-align: center;
+   border: 1px solid #666;
+}
+
+.baocao2c td
+{
+   width: 35px;
+   vertical-align: middle;
+   text-align: center;
+}

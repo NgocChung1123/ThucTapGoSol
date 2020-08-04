@@ -1,0 +1,91 @@
+8/23/2019 4:42:00 PM: Sync DonThu Service Started
+8/23/2019 4:44:50 PM: Sync DonThu Service Stoped
+08/23/2019 4:45:12 PM: ######################################################## Begining ########################################################
+08/23/2019 4:45:12 PM: Send Api QDGQ
+08/23/2019 4:46:34 PM: Json Result: 1
+08/23/2019 4:46:35 PM: Send Api VBTL
+08/23/2019 4:46:36 PM: Newtonsoft.Json; Unexpected character encountered while parsing value: <. Path '', line 0, position 0.; at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at SyncDonThuService.SyncDonThu.Sync() in E:\Project_2018\KNTC_Portal\SyncDonThuService\SyncDonThu.cs:line 113
+08/23/2019 4:47:36 PM: ######################################################## Begining ########################################################
+08/23/2019 4:47:40 PM: Send Api QDGQ
+08/23/2019 4:51:16 PM: ######################################################## Begining ########################################################
+08/23/2019 4:51:16 PM: Send Api QDGQ
+08/23/2019 4:52:58 PM: mscorlib; One or more errors occurred.; at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at SyncDonThuService.ApiService.GetApi(String url) in E:\Project_2018\KNTC_Portal\SyncDonThuService\ApiService.cs:line 42
+08/23/2019 4:54:24 PM: Send Api QDGQ
+08/23/2019 4:56:24 PM: mscorlib; One or more errors occurred.; at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at SyncDonThuService.ApiService.GetApi(String url) in E:\Project_2018\KNTC_Portal\SyncDonThuService\ApiService.cs:line 42
+08/23/2019 5:00:42 PM: mscorlib; One or more errors occurred.; at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at SyncDonThuService.ApiService.GetApi(String url) in E:\Project_2018\KNTC_Portal\SyncDonThuService\ApiService.cs:line 42
+08/23/2019 5:01:27 PM: SyncDonThuService; Object reference not set to an instance of an object.; at SyncDonThuService.SyncDonThu.Sync() in E:\Project_2018\KNTC_Portal\SyncDonThuService\SyncDonThu.cs:line 46
+08/23/2019 5:01:45 PM: ######################################################## Begining ########################################################
+08/23/2019 5:01:45 PM: Send Api QDGQ
+08/23/2019 5:04:03 PM: Json Result: 28
+08/23/2019 5:05:32 PM: Send Api VBTL
+08/23/2019 5:06:52 PM: ######################################################## Begining ########################################################
+08/23/2019 5:06:52 PM: Send Api QDGQ
+08/23/2019 5:12:59 PM: mscorlib; One or more errors occurred.; at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at SyncDonThuService.ApiService.GetApi(String url) in E:\Project_2018\KNTC_Portal\SyncDonThuService\ApiService.cs:line 42
+08/23/2019 5:15:06 PM: mscorlib; One or more errors occurred.; at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at SyncDonThuService.ApiService.GetApi(String url) in E:\Project_2018\KNTC_Portal\SyncDonThuService\ApiService.cs:line 42
+08/23/2019 5:21:03 PM: mscorlib; One or more errors occurred.; at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at SyncDonThuService.ApiService.GetApi(String url) in E:\Project_2018\KNTC_Portal\SyncDonThuService\ApiService.cs:line 42
+08/23/2019 5:28:28 PM: ######################################################## Begining ########################################################
+08/23/2019 5:28:28 PM: Send Api QDGQ
+08/23/2019 6:33:56 PM: ######################################################## Begining ########################################################
+08/23/2019 6:33:56 PM: Send Api QDGQ
+08/23/2019 6:34:13 PM: Json Result: 29
+08/23/2019 6:35:01 PM: .Net SqlClient Data Provider; Procedure or function 'FileKetQua_Insert' expects parameter '@NgayUp', which was not supplied.; at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Com.Gosol.CMS.Utility.SQLHelper.ExecuteScalar(SqlTransaction trans, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) in E:\Project_2018\KNTC_Portal\Com.Gosol.CMS.Utility\SQLHelper.cs:line 127
+   at Com.Gosol.CMS.DAL.DonThu.DonThu.InsertFileKetQua(FileHoSoInfo info) in E:\Project_2018\KNTC_Portal\DAL\DonThu\DonThu.cs:line 435
+   at SyncDonThuService.SyncDonThu.Sync() in E:\Project_2018\KNTC_Portal\SyncDonThuService\SyncDonThu.cs:line 74
+08/23/2019 6:35:07 PM: ######################################################## Begining ########################################################
+08/23/2019 6:35:07 PM: Send Api QDGQ
+08/23/2019 6:35:19 PM: Json Result: 29
+08/23/2019 6:35:27 PM: Send Api QDGQ
+08/23/2019 6:35:39 PM: Json Result: 29
+08/23/2019 6:35:39 PM: Send Api QDGQ
+08/23/2019 6:35:51 PM: Json Result: 29
+08/23/2019 6:35:51 PM: Send Api QDGQ
+08/23/2019 6:36:02 PM: Json Result: 29
+08/23/2019 6:36:02 PM: Send Api QDGQ
+08/23/2019 6:36:15 PM: Json Result: 29
+08/23/2019 6:36:15 PM: Send Api QDGQ
+08/23/2019 6:36:27 PM: Json Result: 29
+08/23/2019 6:36:27 PM: Send Api QDGQ
+08/23/2019 6:36:39 PM: Json Result: 29
+08/23/2019 6:36:39 PM: Send Api QDGQ
+08/23/2019 6:36:52 PM: mscorlib; One or more errors occurred.; at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at SyncDonThuService.ApiService.GetApi(String url) in E:\Project_2018\KNTC_Portal\SyncDonThuService\ApiService.cs:line 42
+08/23/2019 6:36:52 PM: SyncDonThuService; Object reference not set to an instance of an object.; at SyncDonThuService.SyncDonThu.Sync() in E:\Project_2018\KNTC_Portal\SyncDonThuService\SyncDonThu.cs:line 47

@@ -1,0 +1,50 @@
+﻿
+
+The uninstall is beginning.
+See the contents of the log file for the E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.exe assembly's progress.
+The file is located at E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.InstallLog.
+
+The uninstall has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.exe assembly's progress.
+The file is located at E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.InstallLog.
+
+An exception occurred during the Install phase.
+System.InvalidOperationException: Cannot open Service Control Manager on computer '.'. This operation might require other privileges.
+The inner exception System.ComponentModel.Win32Exception was thrown with the following error message: Access is denied.
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.exe assembly's progress.
+The file is located at E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Release\SyncDonThuService.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Debug\SyncDonThuService.exe assembly's progress.
+The file is located at E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Debug\SyncDonThuService.InstallLog.
+
+The uninstall has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Debug\SyncDonThuService.exe assembly's progress.
+The file is located at E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Debug\SyncDonThuService.InstallLog.
+
+An exception occurred during the Install phase.
+System.InvalidOperationException: Cannot open Service Control Manager on computer '.'. This operation might require other privileges.
+The inner exception System.ComponentModel.Win32Exception was thrown with the following error message: Access is denied.
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Debug\SyncDonThuService.exe assembly's progress.
+The file is located at E:\Project_2018\KNTC_Portal\SyncDonThuService\bin\Debug\SyncDonThuService.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.

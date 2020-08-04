@@ -1,0 +1,2 @@
+9/14/2019 1:37:01 PM: Sync DonThu Service Started
+9/14/2019 1:37:07 PM: Sync DonThu Service Stoped

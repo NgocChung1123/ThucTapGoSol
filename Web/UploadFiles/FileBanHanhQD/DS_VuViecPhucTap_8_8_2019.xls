@@ -1,0 +1,110 @@
+
+        <div>
+            <table border="0" style="width: 100%">
+                <tbody><tr class="no-border">
+                  
+                    <td style="text-align: center;" colspan="8">
+                        <span style="font-size: 13pt; font-family: 'Times New Roman'; font-weight: bold;">
+                            <span>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</span>
+                        </span>
+                    </td>
+
+                </tr>
+                <tr class="no-border">
+                 
+                    <td style="text-align: center;" colspan="8">
+                        <span style="font-size: 14pt; font-family: 'Times New Roman'; font-weight: bold;">
+                            <span>Độc lập - Tự do - Hạnh phúc</span>
+                        </span>
+                    </td>
+
+                </tr>
+                  <tr class="no-border">
+                 
+                    <td style="text-align: center;" colspan="8">
+                        <span style="font-size: 14pt; font-family: 'Times New Roman'; font-weight: bold;">
+                            <span>_ _ ** _ _ ** _ _ </span>
+                        </span>
+                    </td>
+
+                </tr>
+              
+            </tbody></table>
+            <br>
+             <br>
+            <table style="width: 100%">
+                <tbody><tr class="no-border">
+
+                    <td style="text-align: center; font-family: 'Times New Roman'; font-weight: bold; font-size: 16pt;" colspan="8">
+                        <b><span>DANH SÁCH VỤ VIỆC PHỨC TẠP</span></b>
+                    </td>
+                </tr>
+
+            </tbody></table>
+        </div>
+        <br>
+        <div>
+
+           <table id="DSDaTiepNhanExport" class="table lblTable_bang table table-bordered table-hover" style="width: 100%;border-collapse: collapse;">
+                        <thead>
+                            <tr style="border: 0.6pt solid rgb(153, 153, 153); color: black;">
+                                <th style="cursor: pointer; border: 0.6pt solid #666;width: 50px">STT</th>
+                                <th style="cursor: pointer; border: 0.6pt solid #666;" class="sodon">Số đơn
+                                </th>
+                                
+                                <th class="hoten_tiepdan" style="cursor: pointer; border: 0.6pt solid #666;width:50px">Tên chủ đơn
+                                </th>
+                                <th class="hoten_tiepdan" style="cursor: pointer; border: 0.6pt solid #666;width:150px">Địa chỉ
+                                </th>
+                                <th style="cursor: pointer; border: 0.6pt solid #666;">Nội dung vụ việc
+                                </th>
+                                <th class="loaikhieuto_tiepdan" style="cursor: pointer; border: 0.6pt solid #666;">Loại đơn
+                                </th>
+                                <th class="ngaytiep_tiepdan" style="cursor: pointer; border: 0.6pt solid #666;">Ngày tiếp nhận
+                                </th>
+                                <th style="cursor: pointer; border: 0.6pt solid #666;">Cơ quan tiếp nhận
+                                </th>
+                            </tr>
+                        </thead>
+                       <tbody><tr style="border: 0.6pt solid rgb(153, 153, 153); color: black;">
+                <td style="cursor: pointer; border: 0.6pt solid #666;text-align:center;">1
+                </td>
+                <td style="text-align:center;cursor: pointer; border: 0.6pt solid #666;">TTT1</td>
+                <td class="hoten" style="cursor: pointer; border: 0.6pt solid #666;">Dung Nhi Test TT Tỉnh </td>
+                <td class="hoten" style="cursor: pointer; border: 0.6pt solid #666;">, Bà Rịa - Vũng Tàu</td>
+                <td class="noidungdons" style="cursor: pointer; border: 0.6pt solid #666;">abc</td>
+                <td class="loaikhieuto" style="cursor: pointer; border: 0.6pt solid #666;">Khiếu nại</td>
+                <td class="ngaythang" style="cursor: pointer; border: 0.6pt solid #666;">07/08/2019</td>
+                <td class="ngaythang" style="cursor: pointer; border: 0.6pt solid #666;">Thanh tra tỉnh</td>
+            </tr></tbody>
+                    </table>
+            <br>
+            <table border="0" style="width: 100%; font-size: 13pt">
+                <tbody><tr class="no-border">
+                    <td colspan="2"></td>
+                    <td colspan="2"></td>
+                    <td style="text-align: center; width: 30%;" colspan="2"></td>
+                    <td style="text-align: center; width: 50%; font-family: 'Times New Roman'; font-size: 13pt; font-style: italic;" colspan="2">
+                        <span id="MainContent_lblNgayIn">Bà Rịa - Vũng Tàu, ngày 8 tháng 8 năm 2019</span>
+                    </td>
+                </tr>
+                <tr class="no-border">
+                    <th style="text-align: center; font-weight: bold" colspan="2"></th>
+                    <th style="text-align: center; font-weight: bold" colspan="2"></th>
+                    <th style="text-align: center; font-weight: bold" colspan="2"></th>
+                    <th style="text-align: center; font-family: 'Times New Roman'; font-size: 13pt; font-weight: bold" colspan="2">Phụ trách           
+                    </th>
+                </tr>
+                <tr class="no-border">
+                    <td style="text-align: center; font-style: italic;" colspan="2"></td>
+                    <td style="text-align: center; font-style: italic;" colspan="2"></td>
+                    <td style="text-align: center; font-style: italic;" colspan="2"></td>
+                    <td style="text-align: center; font-family: 'Times New Roman'; font-size: 13pt; font-style: italic;" colspan="2">(Ký, ghi rõ họ tên)</td>
+                </tr>
+               
+            </tbody></table>
+
+        </div>
+
+        
+    

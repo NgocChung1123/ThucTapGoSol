@@ -1,0 +1,29 @@
+﻿.tab 
+{
+    display: none;
+}
+
+.tab.active 
+{
+    display: block;
+}
+
+#tab-control li 
+{
+    float: left;
+}
+
+#tab-control li a 
+{
+    display: block;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 7px 12px;    
+}
+
+#tab-control li.current a
+{
+    background-color: #28A4E2;
+    border: 1px solid #28A4E2;
+    color: #fff;
+}

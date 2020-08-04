@@ -1,0 +1,102 @@
+﻿.word-document 
+{
+   overflow: auto;
+}
+
+.word-document table
+{
+    background-color: White;    
+    width: 100%;
+}
+
+.word-document table tr
+{
+    border: 1px solid #666;
+}
+
+.word-document table tr td
+{
+    border: 0.5px solid #aaaaaa;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 9pt;
+    padding: 2px;
+}
+
+.word-document2 table tr td
+{    
+    font-size: 11pt !important;    
+    height: 27px;
+}
+.word-document table tbody,thead,tfoot{
+    /*border: 1px solid #999;*/
+}
+.baocao2c table tr td 
+{
+    font-size: 8pt !important;
+}
+
+.no-border 
+{
+    border: 0 none !important;
+}
+
+.no-border tr 
+{
+    border: 0 none !important;
+}
+
+.no-border td 
+{
+    border: 0 none !important;
+}
+
+.report-form 
+{
+    background-color: #F4FAF0;
+    border: 1px solid #dedede;
+    border-radius: 7px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.report-form span 
+{    
+}
+
+.report-form input[type='text']
+{
+    margin-right: 20px;    
+}
+
+.report-form input[type='checkbox']
+{
+    margin-left: 20px;
+    vertical-align: top;
+    margin-top: 1px;
+}
+
+.report-form select 
+{
+    margin-right: 20px;    
+    position: relative;  
+    vertical-align: middle;   
+    height: 30px;
+    padding-top: 2px;
+}
+
+select:focus 
+{    
+}
+
+
+.report-form label 
+{
+    display: inline-block !important;
+}
+
+
+tr.level1 
+{
+    font-weight: bold;
+}

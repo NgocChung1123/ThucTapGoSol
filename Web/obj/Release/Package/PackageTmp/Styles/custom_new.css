@@ -1,0 +1,266 @@
+﻿html, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#ctl00_MainContent_div_hienthidoituong.disabledAll input, #ctl00_MainContent_div_hienthidoituong.disabledAll select, #ctl00_MainContent_div_hienthidoituong.disabledAll radio
+{
+}
+
+ul#menu li a.current
+{
+    background: #98c1d6;
+}
+table#table_form .v-middle
+{
+    vertical-align: middle;
+}
+table#table_form .vtop
+{
+    vertical-align: top;
+   
+}
+#table_form tr td
+{
+    padding: 2px 0;
+}
+.new_tit
+{
+    font-size: 13px;    
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.hoso_type input, .rdbLeft input
+{
+    float: left;
+}
+.hoso_type label, .rdbLeft label
+{
+    width: 110px;
+    float: left;
+    line-height: 20px;
+}
+
+#step-by-step
+{
+    margin-bottom: 10px;
+    overflow: hidden;    
+}
+
+#step-by-step ul li
+{
+    float: left;
+    padding: 7px 10px;
+    border: 1px solid #ccc;
+    background: #EEEEEE;
+    min-width: 220px;
+    margin-right: 1px;
+    color: #666;
+}
+#step-by-step ul li.current
+{
+    border: 1px solid #4780ae;
+    background: #4780ae;
+    color: White;
+}
+#step-by-step ul li label
+{
+    vertical-align: middle;
+}
+#step-by-step ul li a
+{
+    color: #666;
+}
+#step-by-step ul li.current a
+{
+    color: #fff;
+    
+}
+#step-by-step ul li img
+{
+    width: 50px;
+    height: 50px;
+    float: left;
+    vertical-align: middle;
+}
+.clear
+{
+    clear: both;
+}
+.hidden
+{
+    display: none;
+}
+.display
+{
+    display: block;
+}
+#table input.img_button
+{
+    border: 0;
+}
+
+.td-hr
+{
+    width: 150px;
+    border-top: 1px dotted #ccc;
+}
+
+fieldset.step
+{
+    position: relative;    
+}
+
+.step legend
+{
+    text-align: left;
+    border: none;
+}
+​ #tabs > div#tabs-1
+{
+    background-color: #fff;
+}
+.light-hosodon
+{
+    display: block;
+    position: fixed;
+}
+.trungdon-title label
+{
+    font-size: 120%;
+    font-weight: bold;
+    padding: 7px;
+}
+div.trungdon-title
+{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    background: #ddd;
+}
+.input_style input, .input_style button
+{
+    cursor: pointer;
+    padding: 4px 10px;
+}
+.ui-widget input
+{
+    padding: 4px 7px;
+}
+table#table_form .label_1
+{
+    width: 110px;
+}
+.error
+{
+    font-weight: bold; /*color: red;*/
+    padding-left: 5px; /**/
+    right: auto;
+    top: auto;
+    width: auto;
+}
+.save
+{
+    cursor: pointer;
+}
+
+.radio_gaplanhdao input, .radio_gaplanhdao label
+{
+    float: left;
+}
+.radio_gaplanhdao label
+{
+    margin-right: 20px;
+    line-height: 20px;
+}
+.success-msg
+{
+    background: rgb(193, 235, 193);
+    color: Green;
+    padding: 5px;
+    font-size: 120%;
+    text-align: center;
+}
+.error-msg
+{
+    background: rgb(240, 70, 70);
+    color: white;
+    padding: 5px;
+    font-size: 120%;
+    text-align: center;
+}
+
+.chudon_table tr td
+{
+    padding-right: 15px !important;
+    vertical-align: middle;
+}
+
+.chudon_table input
+{
+    width: 100%;
+}
+
+.chudon_table .chosen-container 
+{
+    width: 100% !important;
+}
+
+#dialogDelete, #huyfileConfirm
+{
+    position: fixed;
+    left: 30%;
+    top: 10%;
+    width: 30%;
+    padding: 5px;
+    background: #fff;
+    z-index: 999999;
+}
+
+.print_radio_list label
+{
+    display: inline-block;
+}
+
+.print_radio_list td
+{
+    padding: 3px;
+}
+
+textarea 
+{
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+.tab 
+{
+    /*padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;*/
+}
+.trungdon-header
+{
+    width: 100%;
+    overflow: hidden;
+    height: 40px;
+    margin-bottom: 0px;
+    background: #2167AB;
+}
+
+.radio-table td
+{
+    width: 150px;
+    padding: 3px;
+}
+
+.radio-table td input
+{
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin-top: 2px;
+    margin-right: 2px;
+}

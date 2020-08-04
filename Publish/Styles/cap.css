@@ -1,0 +1,188 @@
+﻿#MainContent_main_panel_container
+{
+    width:70%;    
+}
+#MainContent_popXoa
+{
+    z-index: 1002;
+    outline: 0px;
+    height: auto; 
+    width: 350px; 
+    top: 270; 
+    left: 454px;
+}
+#MainContent_light
+ {
+   z-index: 1002; 
+   outline: 0px; 
+   height: auto;
+   width: 450px;
+   /*margin-top: 15%;*/
+   left: 410px;
+ }
+#macapForm
+{
+    width:auto;
+    min-height:0px;
+    height:165.80000019073486px; 
+}
+#delete-form
+{
+width: auto; 
+min-height: 0px; 
+height: 83.80000019073486px; 
+}
+#icon_alert
+{
+    float: left; 
+    margin: 0 7px 20px 0;
+}
+.close_link :hover
+{
+background-image: url(images/ui-icons_ef8c08_256x240.png);
+border:1px solid #212121;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+}
+#MainContent_popError
+{
+ z-index:1002;
+ margin-left: 35%;
+}
+
+.button-add 
+{
+    font-size: 12pt;
+    float: right;
+    cursor: pointer;
+}
+
+.button-add img 
+{
+    vertical-align: top
+}
+#MainContent_lblError
+{
+ margin-left: 40%;   
+}
+
+
+.report-radio label, .report-radio input[type='radio'] 
+{
+    display: inline; 
+    margin-bottom: 10px;
+}
+
+.report-radio label 
+{
+    margin-top: 3px;
+    vertical-align: 2px;
+}
+#MainContent_main_preview
+{
+    margin-bottom:50px;    
+}
+.disable
+{
+    
+}
+.img_warning
+{
+   vertical-align: -2px;
+   margin-right: 3px;    
+}
+.formErrorContentParent {
+	position: absolute;
+	top: 157px;
+    left: 770px;
+	display: block;
+	z-index: 5000;
+	cursor: pointer;
+	opacity: 0.8;
+}
+.formErrorContent1
+{
+    background: #ee0101;
+    position: relative;
+    z-index: 5001;
+    color: #fff;
+    width: 150px;
+    font-family: tahoma;
+    font-size: 11px;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 6px #000;
+    -moz-box-shadow: 0 0 6px #000;
+    -webkit-box-shadow: 0 0 6px #000;
+    padding: 4px 10px 4px 10px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;    
+}
+.formErrorArrow1 {
+	width: 15px;
+	margin: -2px 0 0 13px;
+    position:relative;
+    z-index: 5006;
+}
+ .formErrorArrow1 div {
+	border-left: 2px solid #ddd;
+	border-right: 2px solid #ddd;
+	box-shadow: 0 2px 3px #444;
+	-moz-box-shadow: 0 2px 3px #444;
+	-webkit-box-shadow: 0 2px 3px #444;
+	font-size: 0px;
+	height: 1px;
+	background: #ee0101;
+	margin: 0 auto;
+	line-height: 0;
+	font-size: 0;
+	display: block;
+}
+
+.formErrorArrow1 .line10 {
+	width: 15px;
+	border: none;
+}
+.formErrorArrow1 .line9 {
+	width: 13px;
+	border: none;
+}
+
+.formErrorArrow1 .line8 {
+	width: 11px;
+}
+
+.formErrorArrow1 .line7 {
+	width: 9px;
+}
+
+.formErrorArrow1 .line6 {
+	width: 7px;
+}
+
+.formErrorArrow1 .line5 {
+	width: 5px;
+}
+
+.formErrorArrow1 .line4 {
+	width: 3px;
+}
+
+.formErrorArrow1 .line3 {
+	width: 1px;
+	border-left: 2px solid #ddd;
+	border-right: 2px solid #ddd;
+	border-bottom: 0 solid #ddd;
+}
+
+.formErrorArrow1 .line2 {
+	width: 3px;
+	border: none;
+	background: #ddd;
+}
+
+.formErrorArrow1 .line1 {
+	width: 1px;
+	border: none;
+	background: #ddd;
+}
