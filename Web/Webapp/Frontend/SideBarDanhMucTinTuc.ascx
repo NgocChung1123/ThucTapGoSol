@@ -77,7 +77,7 @@
             success: function (data) {
                 var data = JSON.parse(data.d);
                 var dataSideBar = data.filter(item => item.Module == 2);
-                console.log('ajax', dataSideBar);
+                //console.log('ajax', dataSideBar);
                 $("#contentSidebar").html("");
                 for (let i = 0; i < dataSideBar.length; i++) {
                     if (dataSideBar[i].TrangThaiHienThi) {

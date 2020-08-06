@@ -13,7 +13,6 @@ namespace Com.Gosol.CMS.Web
         public static void CreatePaging(int totalRow, int currentPage, ref PlaceHolder pageControl)
         {
             int PageSize = IdentityHelper.GetPageSize();
-
             int pageCount = (totalRow / PageSize);
             if (totalRow % PageSize != 0) pageCount++;
             if (pageCount > 1 && pageCount < 10)

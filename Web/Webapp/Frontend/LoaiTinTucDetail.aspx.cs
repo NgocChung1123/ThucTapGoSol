@@ -14,20 +14,25 @@ namespace Com.Gosol.CMS.Web.Webapp.Frontend
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //int loaiTinTucID = Utils.ConvertToInt32(Page.RouteData.Values["mangtinid"], 0);
             int loaiTinTucID = Utils.ConvertToInt32(Request.Params["mangtinid"], 0);
+            if (loaiTinTucID > 0)
+            {
+                Session.Add("loaitintuc", loaiTinTucID);
+            }
             if (!IsPostBack)
             {
-                if (loaiTinTucID > 0)
+                //if (loaiTinTucID > 0)
+                int temp = Utils.ConvertToInt32(Session["loaitintuc"], 1);
+                if (temp > 0)
                 {
                     int page = Utils.ConvertToInt32(Request.Params["page"], 1);
                     if (Session["CurrentPage"] == null)
                         Session.Add("CurrentPage", page);
                     else Session["CurrentPage"] = page;
 
-                    BindMangLoaiTin(loaiTinTucID);
-                    CountTinByLoaiTin(loaiTinTucID);
-                    DMLoaiTinInfo loaiTinInfo = new DMLoaiTin().GetLoaiTinByID(loaiTinTucID);
+                    BindMangLoaiTin(temp);
+                    CountTinByLoaiTin(temp);
+                    DMLoaiTinInfo loaiTinInfo = new DMLoaiTin().GetLoaiTinByID(temp);
                     lblTenLoaiTin.Text = loaiTinInfo.TenLoaiTin;
                 }
             }
@@ -38,20 +43,14 @@ namespace Com.Gosol.CMS.Web.Webapp.Frontend
             int currentPage = String.IsNullOrEmpty(Request.QueryString["page"]) ? 1 : Utils.ConvertToInt32(Request.QueryString["page"], 1);
             int start = (currentPage - 1) * IdentityHelper.GetPageSize();
             int end = currentPage * IdentityHelper.GetPageSize();
-            rptLoaiTinTuc.DataSource = new DMTinTuc().ChiTietLoaiTin_GetByLoaiTinID(loaiTinID,start,end);
+            rptLoaiTinTuc.DataSource = new DMTinTuc().ChiTietLoaiTin_GetByLoaiTinID(loaiTinID, start, end);
             rptLoaiTinTuc.DataBind();
         }
 
         protected void CountTinByLoaiTin(int loaiTinID)
         {
             int totalRow = 0;
-            try
-            {
-                totalRow = new DMTinTuc().GetByLoaiTin_Count(loaiTinID);
-            }
-            catch
-            {
-            }
+            totalRow = new DMTinTuc().GetByLoaiTin_Count(loaiTinID);
             int PageSize = IdentityHelper.GetPageSize();
             int pageCount = (totalRow / PageSize);
             if (totalRow % PageSize != 0) pageCount++;
