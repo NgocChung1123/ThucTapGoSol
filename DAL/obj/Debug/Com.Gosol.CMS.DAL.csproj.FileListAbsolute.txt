@@ -77,3 +77,13 @@ C:\Users\GoSol\Desktop\ThucTapGoSol\DAL\obj\Debug\Com.Gosol.CMS.DAL.csprojAssemb
 C:\Users\GoSol\Desktop\ThucTapGoSol\DAL\obj\Debug\Com.Gosol.CMS.DAL.csproj.CopyComplete
 C:\Users\GoSol\Desktop\ThucTapGoSol\DAL\obj\Debug\Com.Gosol.CMS.DAL.dll
 C:\Users\GoSol\Desktop\ThucTapGoSol\DAL\obj\Debug\Com.Gosol.CMS.DAL.pdb
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\DAL\bin\Debug\Com.Gosol.CMS.DAL.dll
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\DAL\bin\Debug\Com.Gosol.CMS.DAL.pdb
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\DAL\bin\Debug\Com.Gosol.CMS.Model.dll
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\DAL\bin\Debug\Com.Gosol.CMS.Utility.dll
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\DAL\bin\Debug\Com.Gosol.CMS.Utility.pdb
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\DAL\bin\Debug\Com.Gosol.CMS.Model.pdb
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\DAL\obj\Debug\Com.Gosol.CMS.DAL.csprojAssemblyReference.cache
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\DAL\obj\Debug\Com.Gosol.CMS.DAL.csproj.CopyComplete
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\DAL\obj\Debug\Com.Gosol.CMS.DAL.dll
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\DAL\obj\Debug\Com.Gosol.CMS.DAL.pdb

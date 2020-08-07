@@ -5,19 +5,12 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="col-lg-9">
-        <ol class="breadcrumb" style="margin: 0px; display: none">
-            <li><a href="/Webapp/Frontend/Home.aspx"><i class="fa fa-dashboard"></i>Trang chủ</a></li>
-            <li><a href="#" class="">Tin tức</a></li>
-            <li><a href="#" class="active"><%= lblTenLoaiTin.Text %></a></li>
-        </ol>
-
         <div class="row">
             <div class="box box-primary">
-                <div class="box-header" style="font-family: 'Varela Round Regular', 'Varela Round'; font-size:20px; padding-left: 40px; padding-bottom: 0px;">                   
-                    <asp:Label ID="lblTenLoaiTin" runat="server"></asp:Label>               
+                <div class="box-header" style="font-family: 'Varela Round Regular', 'Varela Round'; font-size: 20px; padding-left: 40px; padding-bottom: 0px;">
+                    <asp:Label ID="lblTenLoaiTin" runat="server"></asp:Label>
                 </div>
                 <div class="box-body">
-
                     <asp:Repeater runat="server" ID="rptLoaiTinTuc" OnItemDataBound="rptLoaiTinTuc_ItemDataBound">
                         <ItemTemplate>
                             <div class="list-loaitin">
@@ -27,38 +20,37 @@
                                             <asp:Image runat="server" ID="imgTinTuc" class="tintuc-image-right" />
                                         </asp:HyperLink>
                                     </div>
-                                    <div class="item-loaitin-children item-loaitin-children-text col-lg-8 col-md-8 col-sm-8 col-sm-12" >
+                                    <div class="item-loaitin-children item-loaitin-children-text col-lg-8 col-md-8 col-sm-8 col-sm-12">
                                         <p class="item-tintuc-title-mang-tin">
                                             <span>
-                                                <asp:HyperLink runat="server" ID="hylTin" Style="font-size: 14px; font-weight: 700;font-family: 'Varela Round Bold', 'Varela Round';color: #333333 !important;">
+                                                <asp:HyperLink runat="server" ID="hylTin" Style="font-size: 14px; font-weight: 700; font-family: 'Varela Round Bold', 'Varela Round'; color: #333333 !important;">
                                                     <asp:Label ID="lblTitle" runat="server"></asp:Label>
                                                 </asp:HyperLink></h2>
                                             </span>
                                         </p>
                                         <p style="font-size: 12px; color: #999999;">
                                             <asp:Label ID="lblNgayTao" runat="server" CssClass="span-date"></asp:Label>
-                                             <span>
-                                                <asp:HyperLink runat="server" ID="hplXemChiTiet" Style="font-style:italic">
+                                            <span>
+                                                <asp:HyperLink runat="server" ID="hplXemChiTiet" Style="font-style: italic">
                                                     <span style="font-weight: normal;font-size: 12px;color: #999999;">Xem chi tiết</span>
                                                 </asp:HyperLink>
                                             </span>
                                         </p>
                                         <span style="font-family: 'Varela Round Regular', 'Varela Round';">
                                             <asp:Label ID="lblTomTat" runat="server"></asp:Label>
-                                        </span>                                      
+                                        </span>
                                     </div>
                                 </div>
                             </div>
                         </ItemTemplate>
                     </asp:Repeater>
                     <div class="clearfix"></div>
-                    <div class="paginations" style=" margin-top: 15px; margin-bottom: 15px">
+                    <div class="paginations" style="margin-top: 15px; margin-bottom: 15px">
                         <asp:PlaceHolder ID="plhPaging" runat="server"></asp:PlaceHolder>
                     </div>
                     <div class="clearfix"></div>
                 </div>
             </div>
-
         </div>
     </div>
 

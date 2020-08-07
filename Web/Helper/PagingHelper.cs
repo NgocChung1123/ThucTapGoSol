@@ -13,7 +13,6 @@ namespace Com.Gosol.CMS.Web
         public static void CreatePaging(int totalRow, int currentPage, ref PlaceHolder pageControl)
         {
             int PageSize = IdentityHelper.GetPageSize();
-
             int pageCount = (totalRow / PageSize);
             if (totalRow % PageSize != 0) pageCount++;
             if (pageCount > 1 && pageCount < 10)
@@ -31,6 +30,7 @@ namespace Com.Gosol.CMS.Web
                     {
                         HyperLink hplPage = new HyperLink();
                         Uri pageUri = new Uri(HttpContext.Current.Request.Url.AbsoluteUri);
+                        //string temp = pageUri.AbsoluteUri.ToString();
                         hplPage.NavigateUrl = pageUri.GetLeftPart(UriPartial.Path) + "?page=" + (i + 1).ToString();
                         hplPage.Text = (i + 1).ToString();
                         pageControl.Controls.Add(hplPage);

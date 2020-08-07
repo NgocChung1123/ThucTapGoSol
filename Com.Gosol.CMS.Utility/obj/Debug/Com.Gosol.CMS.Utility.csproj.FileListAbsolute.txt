@@ -98,3 +98,16 @@ C:\Users\GoSol\Desktop\ThucTapGoSol\Com.Gosol.CMS.Utility\obj\Debug\Com.Gosol.CM
 C:\Users\GoSol\Desktop\ThucTapGoSol\Com.Gosol.CMS.Utility\obj\Debug\Com.Gosol.CMS.Utility.csproj.CopyComplete
 C:\Users\GoSol\Desktop\ThucTapGoSol\Com.Gosol.CMS.Utility\obj\Debug\Com.Gosol.CMS.Utility.dll
 C:\Users\GoSol\Desktop\ThucTapGoSol\Com.Gosol.CMS.Utility\obj\Debug\Com.Gosol.CMS.Utility.pdb
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Com.Gosol.CMS.Utility\bin\Debug\Com.Gosol.CMS.Utility.dll
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Com.Gosol.CMS.Utility\bin\Debug\Com.Gosol.CMS.Utility.pdb
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Com.Gosol.CMS.Utility\bin\Debug\Com.Gosol.CMS.Model.dll
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Com.Gosol.CMS.Utility\bin\Debug\Com.Gosol.CMS.Security.dll
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Com.Gosol.CMS.Utility\bin\Debug\HtmlToOpenXml.dll
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Com.Gosol.CMS.Utility\bin\Debug\Com.Gosol.CMS.Model.pdb
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Com.Gosol.CMS.Utility\bin\Debug\Com.Gosol.CMS.Security.pdb
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Com.Gosol.CMS.Utility\bin\Debug\Com.Gosol.CMS.Security.dll.config
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Com.Gosol.CMS.Utility\bin\Debug\HtmlToOpenXml.xml
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Com.Gosol.CMS.Utility\obj\Debug\Com.Gosol.CMS.Utility.csprojAssemblyReference.cache
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Com.Gosol.CMS.Utility\obj\Debug\Com.Gosol.CMS.Utility.csproj.CopyComplete
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Com.Gosol.CMS.Utility\obj\Debug\Com.Gosol.CMS.Utility.dll
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Com.Gosol.CMS.Utility\obj\Debug\Com.Gosol.CMS.Utility.pdb

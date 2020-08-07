@@ -78,142 +78,132 @@
                     </ul>
                 </div>
             </div>
+            <div id="tinCungLoai"></div>
+            <div id="temp" style="display: none">
+                <div class="col-md-12" runat="server" id="divNoiDungTin">
+                    <div class="content-left body-backgroud">
+                        <div class="box-primary">
+                            <div class="box-header">
+                                <span>
+                                    <a id="hplLoaiTin" href="aaa" class="box-title" style="color: #333; padding-right: 10px">
+                                        <label id="lblTenLoaiTin">_TENLOAITIN_</label>
+                                    </a>
+                                </span>
+                                <span>
+                                    <img src="/images/tintuc/tintuc_1183.png" class="tin-cung-chuyen-muc-img" /></span>
+                                <span style="float: right;">
+                                    <img src="/images/tintuc/tintuc_1186.png" /></span>
+                                <span>
+                                    <a id="hplXemThem" href="_LINKXEMTHEM_">
+                                        <span style="font-family: 'Varela Round Regular', 'Varela Round'; font-size: 14px; float: right; padding-top: 2px; padding-right: 10px; font-weight: normal">Xem thêm</span>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="box-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="item-loaitin">
+                                            <div class="item-loaitin-children" style="width: 100%">
+                                                <a id="hplImage" href="_LINKTINTUC_">
+                                                    <img src="_TINTUCCHINHIMAGE_" class="tintuc-image-right" />
+                                                </a>
+                                            </div>
 
-           <asp:Repeater runat="server" ID="rptLoaiTinTuc" OnItemDataBound="rptLoaiTinTuc_ItemDataBound">
-                <ItemTemplate>
-                    <div>
-                    </div>
-                    <div class="col-md-12" runat="server" id="divNoiDungTin">
-                        <div class="content-left body-backgroud">
-                            <div class="box-primary">
-                                <div class="box-header">
-                                    <%--<i class="glyphicon glyphicon-list"></i>--%>
-                                    <span>
-                                        <asp:HyperLink runat="server" ID="hplLoaiTin" class="box-title" style="color: #333; padding-right: 10px">
-                                            <asp:Label runat="server" ID="lblTenLoaiTin"></asp:Label>
-                                        </asp:HyperLink>
-                                    </span>                                  
-                                    <span><img src="/images/tintuc/tintuc_1183.png" class="tin-cung-chuyen-muc-img"/></span>
-                                    <span style="float:right;"><img src="/images/tintuc/tintuc_1186.png"/></span>  
-                                    <span>
-                                          <asp:HyperLink runat="server" ID="hplXemThem">
-                                              <span style="font-family: 'Varela Round Regular', 'Varela Round'; font-size: 14px;float:right;padding-top: 2px;padding-right: 10px;font-weight:normal">Xem thêm</span>
-                                          </asp:HyperLink>
-                                    </span>
-                                </div>
-                                <div class="box-body">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <asp:Repeater runat="server" ID="rptTinTucChildren" OnItemDataBound="rptTinTucChildren_ItemDataBound">
-                                                <ItemTemplate>    
-                                                    <div class="item-loaitin">
-                                                        <div class="item-loaitin-children" style="width: 100%">
-                                                            <asp:HyperLink runat="server" ID="hplImage" ForeColor="White">
-                                                                <asp:Image runat="server" ID="imgTinKinhTeNoiBat" class="tintuc-image-right" />
-                                                            </asp:HyperLink>
-                                                        </div>
-                                                       
-                                                    </div>
-                                                     <p class="item-tintuc-title-mang-tin">
-                                                        <span class="title_news">
-                                                            <asp:HyperLink runat="server" ID="hylTin">
-                                                                <asp:Label ID="lblTitle" runat="server"></asp:Label>
-                                                            </asp:HyperLink></h2>
-                                                        </span>
+                                        </div>
+                                        <p class="item-tintuc-title-mang-tin">
+                                            <span class="title_news">
+                                                <a id="hylTin" href="linkTieuDe">
+                                                      <label id="lblTitle"">_TIEUDETINCHINH_</label>
+                                                </a>
+                                            </span>
 
-                                                    </p>
-                                                    <p style="font-size: 12px; color: #999999;">
-                                                        <asp:Label ID="lblNgayTao" runat="server" CssClass="span-date"></asp:Label>
-                                                         <span>
-                                                            <asp:HyperLink runat="server" ID="hplXemChiTiet" Style="font-style:italic">
-                                                                <span style="font-weight: normal;font-size: 12px;color: #999999;">Xem chi tiết</span>
-                                                            </asp:HyperLink>
-                                                        </span>
-                                                    </p>
-                                                    <div class="item-loaitin-children item-loaitin-children-text" style="width: 100%;padding-left: 0px;">
-                                                            <span>
-                                                                <asp:Label ID="lblTomTat" runat="server"></asp:Label></span>
-                                                            </span>
-                                                     </div>
-                                                </ItemTemplate>
-                                            </asp:Repeater>
+                                        </p>
+                                        <p style="font-size: 12px; color: #999999;">
+                                            <label id="lblNgayTao">_NGAYTAOTINCHINH_</label>
+                                            <span>
+                                                <a id="hplXemChiTiet" href="_LINKTINTUC_" style="font-style: italic;">
+                                                    <span style="font-weight: normal; font-size: 12px; color: #999999;">Xem chi tiết</span>
+                                                </a>
+                                            </span>
+                                        </p>
+                                        <div class="item-loaitin-children item-loaitin-children-text" style="width: 100%; padding-left: 0px;">
+                                            <span>
+                                                <label id="lblTomTat">_TOMTATTINCHINH_</label>
+                                            </span>
                                         </div>
-                                        <div class="col-md-6" style="border-left: 1px solid #eee;">
-                                            <ul class="list-group list-group-flush">
-                                                <asp:Repeater ID="rptTinTucLienQuan" runat="server" OnItemDataBound="rptTinTucLienQuan_ItemDataBound">
-                                                    <ItemTemplate>
-                                                            <%--<div>
-                                                                <a style="width:25%;">
-                                                                    <asp:HyperLink runat="server" ID="hplImageTinLienQuan" ForeColor="White">
-                                                                        <asp:Image runat="server" ID="imgTinTucLienQuan" class="tintuc-image-tin-lien-quan" />
-                                                                    </asp:HyperLink>
-                                                                </a>
-                                                                <span>
-                                                                    <asp:HyperLink runat="server" ID="hylTin">
-                                                                        <asp:Label ID="lblTitle" runat="server"></asp:Label>
-                                                                    </asp:HyperLink>
-                                                                </span> 
-                                                            </div> --%>
-                                                       <table style="margin-bottom: 10px;">
-                                                           <tr>
-                                                               <td style="width:25%">
-                                                                   <asp:HyperLink runat="server" ID="hplImageTinLienQuan" ForeColor="White">
-                                                                        <asp:Image runat="server" ID="imgTinTucLienQuan" class="tintuc-image-tin-lien-quan" />
-                                                                    </asp:HyperLink>
-                                                               </td>
-                                                               <td style="padding-left:10px">
-                                                                   <p>
-                                                                       <asp:HyperLink runat="server" ID="hylTin">
-                                                                            <asp:Label ID="lblTitle" runat="server"></asp:Label>
-                                                                        </asp:HyperLink>
-                                                                   </p>                                                                   
-                                                                   <p style="font-size: 12px; color: #999999;">
-                                                                        <asp:Label ID="lblNgayTao" runat="server" CssClass="span-date"></asp:Label>
-                                                                        <span>
-                                                                            <asp:HyperLink runat="server" ID="hplXemChiTiet" Style="font-style:italic">
-                                                                                <span style="font-weight: normal;font-size: 12px;color: #999999;">Xem chi tiết</span>
-                                                                            </asp:HyperLink>
-                                                                        </span>
-                                                                    </p>
-                                                               </td>
-                                                           </tr>
-                                                       </table>
-                                                       <%-- <li class="list-group-item" style="border-bottom: 1px solid #eee !important;">
-                                                            <asp:HyperLink runat="server" ID="hylTin">
-                                                                 <asp:Label ID="lblTitle" runat="server"></asp:Label>
-                                                            </asp:HyperLink>
-                                                        </li>--%>
-                                                    </ItemTemplate>
-                                                </asp:Repeater>
-                                            </ul>
-                                        </div>
+                                    </div>
+                                    <div class="col-md-6" style="border-left: 1px solid #eee;">
+                                        <ul class="list-group list-group-flush" id="listtinCungLoai__IDTINTUC_">
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tintuc-title-mangtin" style="display: none;">
-                            </div>
                         </div>
                     </div>
-
-                </ItemTemplate>
-            </asp:Repeater>
+                </div>
+            </div>
         </div>
     </div>
     <div class="col-lg-3" style="padding-right: 0px; float: right; padding-top: 0px;">
         <uc1:SideBarDanhMucTinTuc runat="server" ID="SideBarDanhMucTinTuc" />
     </div>
+    <div id="itemTinCungLoai" style="display: none">
+        <table style="margin-bottom: 10px;">
+            <tr>
+                <td style="width: 25%">
+                    <a href="_LINKCHITIET_">
+                        <img src="_IMAGETINCUNGLOAI_" class="tintuc-image-tin-lien-quan" />
+                    </a>
+                </td>
+                <td style="padding-left: 10px">
+                    <p>
+                        <a href="_LINKCHITIET_">
+                            <label>_TIEUDETNCUNGLOAI_</label>
+                        </a>
+                    </p>
+                    <p style="font-size: 12px; color: #999999;">
+                        <label>_NGAYTAO_</label>
+                        <span>
+                            <a href="_LINKCHITIET_" style="font-style: italic">
+                                                                                <span style="font-weight: normal;font-size: 12px;color: #999999;">Xem chi tiết</span>
+                            </a>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
     <script type="text/javascript">
         $(document).ready(function () {
             getTop3TinHot();
             get10TinHot();
-            //getAllLoaiTin();
+            getAllLoaiTin();
         });
+        function formatDate(dateStr) {
+            if (dateStr == "/Date(-62135596800000)/") {
+                var currentDate = new Date();
+                var dd = currentDate.getDate();
+                var mm = currentDate.getMonth() + 1; //January is 0!
+                var yyyy = currentDate.getFullYear();
+                var date = dd + '/' + mm + '/' + yyyy;
+                return date;
+            }
+            else {
+                dateStr = dateStr.replace(/\//g, '');
+                dateStr = dateStr.replace(/Date/g, '');
+                dateStr = dateStr.replace(/\(/g, '');
+                dateStr = dateStr.replace(/\)/g, '');
+                var milisec = parseFloat(dateStr);
+                var date = new Date(milisec);
+                return date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
+            }
+        }
         function getTop3TinHot() {
             $.ajax({
                 type: "POST",
                 url: "TinTucDemo.aspx/getTop3TinHot",
                 dataType: "json",
-                async: "true",
+                async: "false",
                 contentType: "application/json; charset=utf-8",
                 success: function (data) {
                     var Top3Hot = JSON.parse(data.d);
@@ -236,12 +226,13 @@
                 }
             });
         }
+
         function get10TinHot() {
             $.ajax({
                 type: "POST",
                 url: "TinTucDemo.aspx/getAllTinHot",
                 dataType: "json",
-                async: "true",
+                async: "false",
                 contentType: "application/json; charset=utf-8",
                 success: function (data) {
                     var allTopHot = JSON.parse(data.d);
@@ -253,26 +244,45 @@
                 }
             });
         }
+
         function getAllLoaiTin() {
             $.ajax({
                 type: "POST",
                 url: "TinTucDemo.aspx/getAllLoaiTinTuc",
                 dataType: "json",
-                async: "true",
+                async: "false",
                 contentType: "application/json; charset=utf-8",
                 success: function (data) {
                     var allLoaiTin = JSON.parse(data.d);
-                    $("label").text(allLoaiTin[0].TenLoaiTin);
-                    $("a.box-title").attr("href", "/Webapp/Frontend/LoaiTinTucDetail.aspx?mangtinid=" + allLoaiTin[0].IDLoaiTin);
-                    //for (let i = 0; i < allLoaiTin.length; i++) {
-                    //    $("#lbTenLoaiTin").text(allLoaiTin[i].TenLoaiTin);
-                    //    $("#linkLoaiTin").attr("href", "/Webapp/Frontend/LoaiTinTucDetail.aspx?mangtinid=" + allLoaiTin[i].IDLoaiTin);
-                    //    $("#linkXemThem").attr("href", "/Webapp/Frontend/LoaiTinTucDetail.aspx?mangtinid=" + allLoaiTin[i].IDLoaiTin);
+                    var test = formatDate(allLoaiTin[0].ChiTietTinTuc[0].CreateDate);
+                    console.log("aaaaaaaaa: "+test);
+                    //console.log(allLoaiTin[0].ChiTietTinTuc[0]);
+                    for (let i = 0; i < allLoaiTin.length; i++) {
+                        var temp = $("#temp").html();
+                        temp = temp.replace(/_TENLOAITIN_/g, allLoaiTin[i].LoaiTinTuc.TenLoaiTin);
+                        temp = temp.replace(/_LINKXEMTHEM_/g, "/Webapp/Frontend/LoaiTinTucDetailDemoAjax.aspx?mangtinid=" + allLoaiTin[i].ChiTietTinTuc[0].IDLoaiTin);
+                        temp = temp.replace(/_LINKTINTUC_/g, "/Webapp/Frontend/TinTucDetail.aspx?tintuc=" + allLoaiTin[i].ChiTietTinTuc[0].IDTinTuc);
+                        temp = temp.replace(/_TINTUCCHINHIMAGE_/g, "/" + allLoaiTin[i].ChiTietTinTuc[0].ImageUrl);
+                        temp = temp.replace(/_TIEUDETINCHINH_/g, allLoaiTin[i].ChiTietTinTuc[0].TieuDe);
+                        temp = temp.replace(/_NGAYTAOTINCHINH_/g, "Ngày :" + formatDate(allLoaiTin[i].ChiTietTinTuc[0].CreateDate));
+                        temp = temp.replace(/_TOMTATTINCHINH_/g, allLoaiTin[i].ChiTietTinTuc[0].TomTat);
+                        temp = temp.replace(/_IDTINTUC_/g, allLoaiTin[i].LoaiTinTuc.IDLoaiTin);
+                        $("#tinCungLoai").append(temp);
+                        for (let j = 1; j < 6; j++) {
+                            //console.log(allLoaiTin[i].ChiTietTinTuc[j]);
+                            var temp_2 = $("#itemTinCungLoai").html();
+                            temp_2 = temp_2.replace(/_IMAGETINCUNGLOAI_/g, "/" + allLoaiTin[i].ChiTietTinTuc[j].ImageUrl);
+                            temp_2 = temp_2.replace(/_LINKCHITIET_/g, "/Webapp/Frontend/TinTucDetail.aspx?tintuc=" + allLoaiTin[i].ChiTietTinTuc[j].IDTinTuc);
+                            temp_2 = temp_2.replace(/_TIEUDETNCUNGLOAI_/g, allLoaiTin[i].ChiTietTinTuc[j].TieuDe);
+                            temp_2 = temp_2.replace(/_NGAYTAO_/g,"Ngày: "+ formatDate(allLoaiTin[i].ChiTietTinTuc[j].CreateDate));
+                            $("#listtinCungLoai_" + allLoaiTin[i].LoaiTinTuc.IDLoaiTin).append(temp_2);
+                        }
+                    }
 
-                    //}
                 }
             });
         }
+
     </script>
 </asp:Content>
 

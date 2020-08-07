@@ -23,4 +23,10 @@ namespace Com.Gosol.CMS.Model.DanhMuc
         public string NguoiSua { get; set; }
         public string TenLoaiTin { get; set; }
     }
+
+    public class ChiTietTinTucInfo
+    {
+        public List<DMTinTucInfo> ChiTietTinTuc { get; set; }
+        public DMLoaiTinInfo LoaiTinTuc { get; set; }
+    }
 }

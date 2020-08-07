@@ -3238,7 +3238,9 @@
     <Content Include="fileman\web.config" />
     <Content Include="Handler\CkeditorUploader.ashx" />
     <Content Include="Webapp\Frontend\LichTiepDan.aspx" />
+    <Content Include="Webapp\Frontend\LoaiTinTucDetailDemoAjax.aspx" />
     <Content Include="Webapp\Frontend\LoaiTinTucDetail.aspx" />
+    <Content Include="Webapp\Frontend\LoaiTinTucDetailDemo.aspx" />
     <Content Include="Webapp\Frontend\SideBarTinNoiBat.ascx" />
     <Content Include="Webapp\Frontend\SideBarDanhMucTinTuc.ascx" />
     <Content Include="Webapp\Frontend\TimKiemDonThu.aspx" />
@@ -3750,12 +3752,26 @@
     <Compile Include="Webapp\Frontend\LichTiepDan.aspx.designer.cs">
       <DependentUpon>LichTiepDan.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Webapp\Frontend\LoaiTinTucDetailDemoAjax.aspx.cs">
+      <DependentUpon>LoaiTinTucDetailDemoAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webapp\Frontend\LoaiTinTucDetailDemoAjax.aspx.designer.cs">
+      <DependentUpon>LoaiTinTucDetailDemoAjax.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Webapp\Frontend\LoaiTinTucDetail.aspx.cs">
       <DependentUpon>LoaiTinTucDetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Webapp\Frontend\LoaiTinTucDetail.aspx.designer.cs">
       <DependentUpon>LoaiTinTucDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webapp\Frontend\LoaiTinTucDetailDemo.aspx.cs">
+      <DependentUpon>LoaiTinTucDetailDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webapp\Frontend\LoaiTinTucDetailDemo.aspx.designer.cs">
+      <DependentUpon>LoaiTinTucDetailDemo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Webapp\Frontend\SideBarTinNoiBat.ascx.cs">
       <DependentUpon>SideBarTinNoiBat.ascx</DependentUpon>

@@ -40,3 +40,7 @@ C:\Users\GoSol\Desktop\ThucTapGoSol\Model\bin\Debug\Com.Gosol.CMS.Model.pdb
 C:\Users\GoSol\Desktop\ThucTapGoSol\Model\obj\Debug\Com.Gosol.CMS.Model.dll
 C:\Users\GoSol\Desktop\ThucTapGoSol\Model\obj\Debug\Com.Gosol.CMS.Model.pdb
 C:\Users\GoSol\Desktop\ThucTapGoSol\Model\obj\Debug\Com.Gosol.CMS.Model.csprojAssemblyReference.cache
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Model\bin\Debug\Com.Gosol.CMS.Model.dll
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Model\bin\Debug\Com.Gosol.CMS.Model.pdb
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Model\obj\Debug\Com.Gosol.CMS.Model.dll
+C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Model\obj\Debug\Com.Gosol.CMS.Model.pdb
