@@ -52,4 +52,7 @@ C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Sercurity\obj\Debug\Com.Gosol.CMS.Secu
 C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Sercurity\obj\Debug\Com.Gosol.CMS.Security.csproj.GenerateResource.cache
 C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Sercurity\obj\Debug\Com.Gosol.CMS.Security.dll
 C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Sercurity\obj\Debug\Com.Gosol.CMS.Security.pdb
+<<<<<<< HEAD
 C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Sercurity\obj\Debug\Com.Gosol.CMS.Security.csprojAssemblyReference.cache
+=======
+>>>>>>> origin/CongTy

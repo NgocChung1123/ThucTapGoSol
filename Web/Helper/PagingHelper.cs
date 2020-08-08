@@ -30,6 +30,7 @@ namespace Com.Gosol.CMS.Web
                     {
                         HyperLink hplPage = new HyperLink();
                         Uri pageUri = new Uri(HttpContext.Current.Request.Url.AbsoluteUri);
+                        //string temp = pageUri.AbsoluteUri.ToString();
                         hplPage.NavigateUrl = pageUri.GetLeftPart(UriPartial.Path) + "?page=" + (i + 1).ToString();
                         hplPage.Text = (i + 1).ToString();
                         pageControl.Controls.Add(hplPage);

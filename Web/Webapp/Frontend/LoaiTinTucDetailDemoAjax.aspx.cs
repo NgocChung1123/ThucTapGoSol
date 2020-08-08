@@ -1,5 +1,9 @@
 ﻿using Com.Gosol.CMS.DAL.DanhMuc.QLTinTuc;
 using Com.Gosol.CMS.Model.DanhMuc;
+<<<<<<< HEAD
+=======
+using Com.Gosol.CMS.Utility;
+>>>>>>> origin/CongTy
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,11 +19,31 @@ namespace Com.Gosol.CMS.Web.Webapp.Frontend
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 
         }
 
         [WebMethod]
         public static string GetAllLoaiTinTucAndTinLienQuan()
+=======
+            int loaiTinTucID = Utils.ConvertToInt32(Request.Params["mangtinid"], 0);
+            loaiTinID.Value = loaiTinTucID.ToString();
+        }
+
+        [WebMethod]
+        public static string GetAlltinTucByIDLoaiTin(int loaiTinID)
+        {
+            //int IDLoaiTin = Utils.ConvertToInt32(loaiTinID, 1);
+            List<DMTinTucInfo> lstTinTucByIDLoaiTin = new List<DMTinTucInfo>();
+            string data = "";
+            lstTinTucByIDLoaiTin = new DMTinTuc().TinPublic_GetByLoaiTinID(loaiTinID);
+            JavaScriptSerializer serializer = new JavaScriptSerializer();
+            data = serializer.Serialize(lstTinTucByIDLoaiTin);
+            return data;
+        }
+        [WebMethod]
+        public static string GetAllLoaiTinTucAndTinTucLienQuan()
+>>>>>>> origin/CongTy
         {
             List<ChiTietTinTucInfo> ListTinTuc = new List<ChiTietTinTucInfo>();
             List<DMLoaiTinInfo> lstAllLoaiTin = new DMLoaiTin().GetAllLoaiTin_Public();

@@ -260,7 +260,11 @@
                     for (let i = 0; i < allLoaiTin.length; i++) {
                         var temp = $("#temp").html();
                         temp = temp.replace(/_TENLOAITIN_/g, allLoaiTin[i].LoaiTinTuc.TenLoaiTin);
+<<<<<<< HEAD
                         temp = temp.replace(/_LINKXEMTHEM_/g, "/Webapp/Frontend/LoaiTinTucDetailDemo.aspx?mangtinid=" + allLoaiTin[i].ChiTietTinTuc[0].IDLoaiTin);
+=======
+                        temp = temp.replace(/_LINKXEMTHEM_/g, "/Webapp/Frontend/LoaiTinTucDetailDemoAjax.aspx?mangtinid=" + allLoaiTin[i].ChiTietTinTuc[0].IDLoaiTin);
+>>>>>>> origin/CongTy
                         temp = temp.replace(/_LINKTINTUC_/g, "/Webapp/Frontend/TinTucDetail.aspx?tintuc=" + allLoaiTin[i].ChiTietTinTuc[0].IDTinTuc);
                         temp = temp.replace(/_TINTUCCHINHIMAGE_/g, "/" + allLoaiTin[i].ChiTietTinTuc[0].ImageUrl);
                         temp = temp.replace(/_TIEUDETINCHINH_/g, allLoaiTin[i].ChiTietTinTuc[0].TieuDe);

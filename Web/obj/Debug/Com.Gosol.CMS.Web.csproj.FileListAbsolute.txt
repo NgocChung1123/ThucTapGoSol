@@ -276,6 +276,7 @@ C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Web\obj\Debug\Com.Gosol.CMS.Web.csproj
 C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Web\obj\Debug\Com.Gosol.CMS.Web.csproj.CopyComplete
 C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Web\obj\Debug\Com.Gosol.CMS.Web.dll
 C:\Users\GoSol\Desktop\GoSol\ThucTapGoSol\Web\obj\Debug\Com.Gosol.CMS.Web.pdb
+<<<<<<< HEAD
 C:\Users\chung\Desktop\GoSol\ThucTapGoSol\Web\bin\App_Data\ImportTemplate\BaoCao2a.xml
 C:\Users\chung\Desktop\GoSol\ThucTapGoSol\Web\bin\App_Data\ImportTemplate\BaoCao2b.xml
 C:\Users\chung\Desktop\GoSol\ThucTapGoSol\Web\bin\App_Data\ImportTemplate\BaoCao2c.xml
@@ -310,3 +311,5 @@ C:\Users\chung\Desktop\GoSol\ThucTapGoSol\Web\obj\Debug\Com.Gosol.CMS.Web.csproj
 C:\Users\chung\Desktop\GoSol\ThucTapGoSol\Web\obj\Debug\Com.Gosol.CMS.Web.csproj.CopyComplete
 C:\Users\chung\Desktop\GoSol\ThucTapGoSol\Web\obj\Debug\Com.Gosol.CMS.Web.dll
 C:\Users\chung\Desktop\GoSol\ThucTapGoSol\Web\obj\Debug\Com.Gosol.CMS.Web.pdb
+=======
+>>>>>>> origin/CongTy

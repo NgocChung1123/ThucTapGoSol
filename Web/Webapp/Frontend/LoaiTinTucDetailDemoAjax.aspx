@@ -5,6 +5,10 @@
     <link href="/AdminLte/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="/AdminLte/dist/css/AdminLTE.min.css" rel="stylesheet" />
     <link href="../../AdminLte/dist/css/cssTinTuc.css" rel="stylesheet" />
+<<<<<<< HEAD
+=======
+    <input type="hidden" id="loaiTinID" value="0" runat="server" />
+>>>>>>> origin/CongTy
     <div class="col-lg-9">
         <div class="row">
             <div class="box box-primary">
@@ -48,6 +52,11 @@
             </div>
             <div class="clearfix"></div>
             <div class="paginations" style="margin-top: 15px; margin-bottom: 15px">
+<<<<<<< HEAD
+=======
+                <ul id="ulPage" class="nav navbar-nav nav-list" style="float: right; padding-right: 20px;">
+                </ul>
+>>>>>>> origin/CongTy
             </div>
             <div class="clearfix"></div>
         </div>
@@ -55,10 +64,17 @@
     <div class="col-lg-3">
         <uc1:SideBarDanhMucTinTuc runat="server" ID="SideBarDanhMucTinTuc" />
     </div>
+<<<<<<< HEAD
+=======
+    <div id="liItemPage" style="display: none">
+        <li><a href="_LINKNEXTPAGE_" style="padding: 5px; margin: 2px; border: 1px solid #337ab7; text-decoration: none;">_PAGENUMBER_</a></li>
+    </div>
+>>>>>>> origin/CongTy
     <script type="text/javascript">
         $(document).ready(function () {
             getALLTinTuc();
         });
+<<<<<<< HEAD
         function getALLTinTuc() {
             $.ajax({
                 type: "POST",
@@ -72,6 +88,40 @@
                 },
                  error: function () {
                      alert("fail")
+=======
+        function createPage(lstData) {
+            var pageSize = 10;
+            var totalRow = lstData.length;
+            var totalPage = totalRow / pageSize;
+            if (totalRow % pageSize != 0) totalPage++;
+            for (let i = 1; i < totalPage; i++) {
+                var liTemp = $("#liItemPage").html();
+                liTemp = liTemp.replace(/_LINKNEXTPAGE_/g, "/Webapp/Frontend/LoaiTinTucDetailDemoAjax.aspx?mangtinid=" + 1005);
+                liTemp = liTemp.replace(/_PAGENUMBER_/g, i);
+                console.log("sucesssssss");
+                $("#ulPage").append(liTemp);
+            }
+        }
+        function getALLTinTuc() {
+            var t = $("#MainContent_loaiTinID").val();
+            console.log(t);
+            $.ajax({
+                type: "POST",
+                url: "LoaiTinTucDetailDemoAjax.aspx/GetAlltinTucByIDLoaiTin",
+                data ='{loaiTinID: "1005"}',
+                dataType: "json",
+                async: "false",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    var all = JSON.parse(data.d);
+                    console.log(all);
+                    if (all = "") {
+                        alert("Chua truyen ID loai tin !");
+                    }
+                },
+                error: function () {
+                    alert("fail")
+>>>>>>> origin/CongTy
                 },
             });
         }
