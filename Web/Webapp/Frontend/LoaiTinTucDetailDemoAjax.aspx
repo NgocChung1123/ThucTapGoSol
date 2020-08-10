@@ -84,7 +84,7 @@
             $.ajax({
                 type: "POST",
                 url: "LoaiTinTucDetailDemoAjax.aspx/GetAlltinTucByIDLoaiTin",
-                data ='{loaiTinID: "1005"}',
+                data : '{loaiTinID: "1005"}',
                 dataType: "json",
                 async: "false",
                 contentType: "application/json; charset=utf-8",

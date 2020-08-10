@@ -3245,6 +3245,8 @@
     <Content Include="Webapp\Frontend\SideBarDanhMucTinTuc.ascx" />
     <Content Include="Webapp\Frontend\TimKiemDonThu.aspx" />
     <Content Include="Webapp\Frontend\TinTucDemo.aspx" />
+    <Content Include="Webapp\Frontend\TinTucDetailDemo.aspx" />
+    <Content Include="Webapp\Frontend\TinTucDetailDemoAjax.aspx" />
     <Content Include="Webapp\Frontend\TraCuuDonThu.aspx" />
     <Content Include="Webapp\Frontend\TrinhTuThuTuc.aspx" />
     <Content Include="Webapp\Frontend\TinTuc.aspx" />
@@ -3800,6 +3802,20 @@
     </Compile>
     <Compile Include="Webapp\Frontend\TinTucDemo.aspx.designer.cs">
       <DependentUpon>TinTucDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webapp\Frontend\TinTucDetailDemo.aspx.cs">
+      <DependentUpon>TinTucDetailDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webapp\Frontend\TinTucDetailDemo.aspx.designer.cs">
+      <DependentUpon>TinTucDetailDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webapp\Frontend\TinTucDetailDemoAjax.aspx.cs">
+      <DependentUpon>TinTucDetailDemoAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webapp\Frontend\TinTucDetailDemoAjax.aspx.designer.cs">
+      <DependentUpon>TinTucDetailDemoAjax.aspx</DependentUpon>
     </Compile>
     <Compile Include="Webapp\Frontend\TraCuuDonThu.aspx.cs">
       <DependentUpon>TraCuuDonThu.aspx</DependentUpon>

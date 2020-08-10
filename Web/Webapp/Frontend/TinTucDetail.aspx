@@ -25,13 +25,13 @@
         }
     </style>
     <div class="col-md-9">
-        <div style="display: none">
+        <%--<div style="display: none">
             <ol class="breadcrumb" style="margin: 0px;">
                 <li><a href="/Webapp/Frontend/Home.aspx"><i class="fa fa-dashboard"></i>Trang chủ</a></li>
                 <li><a href="/Webapp/Frontend/TinTuc.aspx" class="">Tin tức</a></li>
                 <li><a href="/Webapp/Frontend/LoaiTinTucDetail.aspx" class="active"><%= lblLoaiTin.Text %></a></li>
             </ol>
-        </div>
+        </div>--%>
 
         <div class="row">
             <div class="box-primary" style="text-align: justify">

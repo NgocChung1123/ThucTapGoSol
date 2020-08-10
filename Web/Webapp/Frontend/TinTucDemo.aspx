@@ -261,7 +261,7 @@
                         var temp = $("#temp").html();
                         temp = temp.replace(/_TENLOAITIN_/g, allLoaiTin[i].LoaiTinTuc.TenLoaiTin);
                         temp = temp.replace(/_LINKXEMTHEM_/g, "/Webapp/Frontend/LoaiTinTucDetailDemoAjax.aspx?mangtinid=" + allLoaiTin[i].ChiTietTinTuc[0].IDLoaiTin);
-                        temp = temp.replace(/_LINKTINTUC_/g, "/Webapp/Frontend/TinTucDetail.aspx?tintuc=" + allLoaiTin[i].ChiTietTinTuc[0].IDTinTuc);
+                        temp = temp.replace(/_LINKTINTUC_/g, "/Webapp/Frontend/TinTucDetailDemoAjax.aspx?tintuc=" + allLoaiTin[i].ChiTietTinTuc[0].IDTinTuc);
                         temp = temp.replace(/_TINTUCCHINHIMAGE_/g, "/" + allLoaiTin[i].ChiTietTinTuc[0].ImageUrl);
                         temp = temp.replace(/_TIEUDETINCHINH_/g, allLoaiTin[i].ChiTietTinTuc[0].TieuDe);
                         temp = temp.replace(/_NGAYTAOTINCHINH_/g, "Ngày :" + formatDate(allLoaiTin[i].ChiTietTinTuc[0].CreateDate));
@@ -272,7 +272,7 @@
                             //console.log(allLoaiTin[i].ChiTietTinTuc[j]);
                             var temp_2 = $("#itemTinCungLoai").html();
                             temp_2 = temp_2.replace(/_IMAGETINCUNGLOAI_/g, "/" + allLoaiTin[i].ChiTietTinTuc[j].ImageUrl);
-                            temp_2 = temp_2.replace(/_LINKCHITIET_/g, "/Webapp/Frontend/TinTucDetail.aspx?tintuc=" + allLoaiTin[i].ChiTietTinTuc[j].IDTinTuc);
+                            temp_2 = temp_2.replace(/_LINKCHITIET_/g, "/Webapp/Frontend/TinTucDetailDemoAjax.aspx?tintuc=" + allLoaiTin[i].ChiTietTinTuc[j].IDTinTuc);
                             temp_2 = temp_2.replace(/_TIEUDETNCUNGLOAI_/g, allLoaiTin[i].ChiTietTinTuc[j].TieuDe);
                             temp_2 = temp_2.replace(/_NGAYTAO_/g,"Ngày: "+ formatDate(allLoaiTin[i].ChiTietTinTuc[j].CreateDate));
                             $("#listtinCungLoai_" + allLoaiTin[i].LoaiTinTuc.IDLoaiTin).append(temp_2);
